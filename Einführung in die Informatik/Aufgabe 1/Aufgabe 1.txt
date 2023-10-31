@@ -1,0 +1,70 @@
+24.10.2024
+EII
+Julian Bertol
+
+
+Aufgabe 2.1)
+
+Befehle:
+mkdir EII -> erstelt ein Verzeichniss names "EII"
+
+nano -> oeffnet das Nano über das dann diese Datei erstellt wurde.
+
+ls: gibt alle Dateien/Ordner aus die in dem aktuellen verzeichniss sind.
+        ls -c zeigt Ordner sortiert nach Aenderungsdatum
+        ls -R zeigt auch unterverzeichnisse an
+        ls -A zeigt auch versteckte verzeichnisse an
+
+ps: Damit ermittelt man Informationen ueber Prozesse
+	ps -A zeigt Alle Prozesse an
+	ps -T zeigt alle laufenden Prozesse die in verbindung mit dem
+	      Terminal stehen
+	ps -a zeigt alle laufenden Prozesse die nicht in verindung mit 
+	      dem Terminal sind
+	
+wc: gibt Inforationen über eine Datei. bsp: 19 54 332 Aufgabe eins
+    -> 19 Zeilen 54 Wörter 332 Buchstaben 
+	wc -c zält die Bytes einer Datei
+	wc -L Die länge der Längstenzeile wird ausgegeben
+	wc -w Die Woerter der Datei werden gezählt
+
+du: Zeigt die Speichergroeße an
+	du --time zeigt die Speichergroeße + letzte Änderung an
+	du -c zeigt die gesamtgroeße des aktiellen verzeichnisses an
+	du -a zeigt auch Dateien mit an
+
+
+file: Gibt den Datentyp einer Datei aus.
+	file -v zeigt die version einer Datein an
+	file -b Output ohne filename
+	file --help gibt hilfe über den Befehl file
+
+grep: sucht nach Wörtern die in Dateien stehen. z.b.:
+      cd Documents/HFU/ws2324/EII/LaTeX
+      grep "Hallo" *.tex
+      -> sucht in allen tex dateien nach dem Wort "Hallo"
+      Output-> Hallo Welt  \newline
+      Hierbei wird das gesuchte Wort rot geschrieben
+	grep -c gibt die Anzahl der gefundenen Zeilen an
+	grep -b gibt die zeile mit an
+
+cat: liest eine Datei aus. bsp.: 'cat Aufgabeeins' -> zeigt den Inhalt dieser
+     Datei an
+	cat -E fuegt ein $ an das Ende jeder Zeile
+	cat -n zeigt die Zeilennummern mit an
+
+scp: (Secure Copy) Damit kann man Daten zwischen zwei verschiedenen Rechner
+     hin und her kopieren. Die Rechner muessen im selben Netz sein.
+	scp test.txt user@server/home -> um datei auf server zu kopieren
+	scp -i .ssh/my-key-file test.txt user@server/home -> um Datei mit
+	       SSH auf den Server zu kopieren
+
+sudo: Befehl um Befehle als SuperUser oder anderer Benutzer durchzuführen
+	sudo su Führt den danach folgenden Befehl als SuperUser aus
+	sudo apt-get update um ein update als SuperUser auszuführen
+
+Aufgabe 2.2)
+ls/bin gibt alle Ordner und Datein im Ordner bin aus
+grep set sucht nach dem Wort set
+-> Es wird im verzeichnis /bin nach Orndern oder Dateien gesucht die das Wort
+   set beinhalten

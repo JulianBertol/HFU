@@ -1,0 +1,6 @@
+-open Terminal with ctl+alt+t or search in searchbar
+-then type sudo apt-get install texlive-full
+-create your .tex file
+-go back in terminal and cd in your folder 
+-run the following command to convert you .tex to .pdf
+-pdflatex "filename"
