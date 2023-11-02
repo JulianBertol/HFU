@@ -24,7 +24,7 @@ scanf("%i", &month);
 
     case 2:
         name = "Februar";
-        if (year % 4 == 0){
+        if (year % 4 == 0 && year % 100 != 0 || year %400 == 0){
             days = 29;
         }else
         {

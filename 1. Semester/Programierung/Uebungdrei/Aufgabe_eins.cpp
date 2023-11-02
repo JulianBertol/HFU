@@ -6,7 +6,7 @@
 int main(int argc, char** argv){
     //Aufgabe 1
     unsigned int jahr = 2004;
-    if(jahr % 4 == 0 ){
+    if(jahr % 4 == 0 && jahr % 100 != 0 || jahr % 400 == 0 ){
         printf("Das Jahr %u ist ein Schaltjahr!\n", jahr);
     }
     else{
