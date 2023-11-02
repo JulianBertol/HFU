@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include<iostream>
 #include<bitset>
 #include<string>
 
 int main(int argc, char** argv){
     //Aufgabe 1
-    unsigned int jahr = 2022;
-    if(jahr / 4 * 4 == jahr ){
+    unsigned int jahr = 2004;
+    if(jahr % 4 == 0 ){
         printf("Das Jahr %u ist ein Schaltjahr!\n", jahr);
     }
     else{
@@ -18,7 +19,7 @@ int main(int argc, char** argv){
     const int b = 8;
     i = 200;
     std::string k = std::bitset<b>(i).to_string();
-    printf("Die zahl %i ist binär dargestellt: %.10s", i,k);
+    std::cout << "Die Zahl " << i << " ist binär dargestellt: " << k << std::endl;
 
 
     //Aufgabe 3
