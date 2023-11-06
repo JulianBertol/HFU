@@ -1,0 +1,301 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+%\usepackage{latexsym}
+
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 2}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{Aufgabe 1}
+\textbf{1 Umrechnung zwischen Zahlensystemen} \newline
+Uben Sie die Umrechnung von verschiedenen Ausgangs-Zahlensystemen in verschiedene Basissysteme:\newline
+Folgende Zahlen sollen umgerechnet werden:\newline
+19210,0C16,7648,011111102\newline
+Berechnen Sie fur jede Zahl die Darstellung in den anderen hier verwendeten Zahlensystemen.\newline
+Bestimmen Sie fur die nachfolgenden aufeinander aufbauenden Festlegungen jeweils den unteren und oberen darstellbaren Wert im Dezimalsystem und im Hexadezimalsystem.
+
+\subsection{Problem}
+Folgende Zahlen müssen umgerechnet werden:\newline
+19210,0C16,7648,011111102 \newline
+\subsection{L"osungskonzept}
+Verstehen wie die umrechnunng funktioniert mit hilfe von Google \newline
+\pagebreak
+
+\subsection{konkrete L"osung}
+
+$192_10$ ist eine Dezimalzahl, da es sich um das 10er Zahlensystem handelt.\newline
+Umrechnung in Bin\"ar \newline
+192 / 2 = 96 Rest 0 \newline
+ 96 / 2 = 48 Rest 0 \newline
+ 48 / 2 = 24 Rest 0 \newline
+ 24 / 2 = 12 Rest 0 \newline
+ 12 / 2 =  6 Rest 0 \newline
+  6 / 2 =  3 Rest 0 \newline
+  3 / 2 =  1 Rest 1 \newline
+  1 / 2 =  0 Rest 1 \newline
+192 in Bin\"ar ist = 11000000 \newline
+
+192 in Hexadezimal \newline
+192 / 16 = 12 Rest 0 \newline
+ 12 / 16 =  0 Rest 12 \newline
+192 in Hexadezimal = C0 \newline
+
+192 in Oktalzahlensystem \newline
+192 / 8 = 24 Rest 0 \newline
+ 24 / 8 =  3 Rest 0 \newline
+  3 / 8 =  0 Rest 3 \newline
+192 in Oktal = 300 \newline
+
+
+
+$oC_16$ in Dezimal: \newline
+= 12 * 16⁰ + 0 * 16¹ \newline
+= 12 \newline
+
+$oC_16$ in Bin\"ar \newline
+12 / 2 = 6 Rest 0 \newline
+ 6 / 2 = 3 Rest 0 \newline
+ 3 / 2 = 1 Rest 1 \newline
+ 1 / 2 = 0 Rest 1 \newline
+$oC_16$ in Bin\"ar = 1100
+
+$oC_16$ in Oktal \newline
+12 / 8 = 1 Rest 4\newline
+ 1 / 8 = 0 Rest 1\newline
+$oC_16$ in Oktal = 14 \newline
+
+
+
+\pagebreak
+
+$764_8$ Oktal in Dezimal \newline
+= 4 * 8⁰ + 6 * 8¹ + 7 * 8² \newline
+= 500\newline
+
+$764_8$ in Hexadezimal \newline
+500 / 16 = 31 Rest 4 \newline
+ 31 / 16 =  1 Rest 15 \newline
+  1 / 16 =  0 Rest 1 \newline
+$764_8$ in Hexa = 1F4 \newline
+
+$764_8$ in Bin\"ar \newline
+500 / 2 = 250 Rest 0 \newline
+250 / 2 = 125 Rest 0 \newline
+125 / 2 =  62 Rest 1 \newline
+ 62 / 2 =  31 Rest 0 \newline
+ 31 / 2 =  15 Rest 1 \newline
+ 15 / 2 =   7 Rest 1 \newline
+  7 / 2 =   3 Rest 1 \newline
+  3 / 2 =   1 Rest 1 \newline
+  1 / 2 =   0 Rest 1 \newline
+ $764_8$ in Bin\"ar = 111110100
+
+
+
+
+
+$01111110_2$ von Bin\"ar in Dezimal \newline
+= 2¹+2²+2³+2⁴+2⁵+2⁶ \newline
+= 126 \newline
+
+$01111110_2$ in Hexadezimal \newline
+126 / 16 = 7 Rest 14 \newline
+  7 / 16 = 0 Rest  7 \newline
+$01111110_2$ in Hexa = 7E
+
+$01111110_2$ in Oktal \newline
+126 / 8 = 15 Rest 6 \newline
+ 15 / 8 =  1 Rest 7 \newline
+  1 / 8 =  0 Rest 1 \newline
+$01111110_2$ in Oktal = 176
+
+
+ 
+
+HexadezimalSystem erklärt: \newline
+Zahlen von 0-9 wie auch im normalen DezimalSystem. \newline
+Buchstaben von A bis F\newline
+A = 10 \newline
+B = 11 \newline
+C = 12 \newline
+D = 13 \newline
+E = 14 \newline
+F = 15 \newline
+
+Oktalsystem erklärt: \newline
+Oktal bedeutet 8. \newline
+Man nimmt also jeden koeffizienten und multipliziert ihn mit 8 und eine Hochzahl \newline
+Dabei beginnt man von rechts nach links und erhöt die Zahl hochzahl immer um 1. Man beginnt mit 0. \newline
+Am ende werden alle Zahlen addiert.\newline
+
+Bin\"arsystem erklärt: \newline
+Man hat eine Zahlenfolge von 0 und 1. Man beginnt von rechts nach links zu lesen. Ist die Zahl 0, \newline
+kann man diese \"uberspringen. Ist die Zahl 1 rechnet man mit 2 und eine Hochzahl. Dabei wird die hochzahl von rechts nach links \newline
+immer um 1 erh\"ot ergal um die Bin\"ar Zahl 1 oder 0 ist. Am ende addiert man alle Zahlen zusammen.
+
+
+
+
+
+\textbf{Beispiel IPV4 Adressen} \newline
+\begin{itemize}
+	\item Das H\"ochstwerige Bit muss 0 sein: Die Wertdastellung geht von 0 bis 127:\newline
+	      011111111 = 127\newline
+	\item Jetzt muss das H\"ochstwertige Bit immer 1 sein, das Zweith\"ochste Bit muss 0 sein:\newline
+	      Die Wertedarstellung get von: 128 bis 119 \newline
+	      Niedrigste: 10000000 = 128 \newline
+	      H\"ochste:  10111111 = 191 \newline
+	\item jetzt m\"ussen das h\"ochste und das zweith\"ochste Bit 1 gesetzt sein, das dritth\"ochste \newline
+	      Bit muss 0 sein: Die Wertedarstellung geht von 0 bis 10 \newline
+	      Niedrigste: 11000000 = 192 \newline
+	      H\"ochste:  11011111 = 232 \newline
+\end{itemize}
+
+\pagebreak
+
+\subsection{Tests}
+Nach einen Umrechner im Internet suchen und die ergebnisse vergleichen. \newline
+
+\section{Aufgabe 2}
+% hier dann die eigene Bearbeitung einfuegen
+\subsection{Problem}
+\begin {itemize}
+\item zuerst muss man die Gr\"o\"ste 4 Bit Zahl in Dezimal umrechnen \newline
+\item Dann muss eine Tabelle ausgefüllt werden indem man in verschiedenen Systemen umrechnet \newline
+\end {itemize}
+
+\subsection{L\"osungskonzept}
+Mit den vorher gelerneten eigenschaften die L\"osungen berechnen \newline
+
+\pagebreak
+\subsection{L\"osung}
+Die gr\"o\"ste 4 bit zahl im Bin\"arsystem ist: \newline
+1111 = 15 \newline
+Die kommastellen werden mit $1*2^{-n}$ berechnet. Dabei ist n die Bitzahl \newline
+Berechnung der Kommastelle: \newline
+$(1*2^{-1}) + (1*2^{-2}) + (1*2^{-3})+ (1*2^{-4})$ \newline
+Das ergibt dann $0.9375$ \newline
+Somit ist die gr\"o\"ste darstellbare Zahl im Bin\"arsystem mit 4 bit 15.9375 \newline
+
+
+Die gr\"o\"ste 4 bit Zahl im Hexadezimalsystem ist: \newline
+FFFF = 65535 \newline
+Auch hier werden die Nachkomma zahl mit $15*16^{-n}$ berechnet \newline
+$(15 * 16^{-1}) + (15 * 16^{-2}) + (15 * 16^{-3}) + (15 * 16^{-3})$ \newline
+somit ist das ergebniss : $.9999847412109375$ \newline
+
+
+Die gr\"o\"ste 4 bit Zahl im Hexadezimalsystem ist: \newline
+$7777 = 4095$
+Die Zahlen nach dem Komma m"ussen hier dann als $7 * 8^{-n}$ geschrieben werden. Somit $(7 * 8^{-1}) + (7 * 8^{-2}) + (7 * 8^{-3}) + (7 * 8^{-4})$ was ca.999755859375 ergibt. \newline
+Somit ist die Gr\"o\"ste Zahl 4095.999755859375 \newline
+
+\begin{table}
+\begin{tabular}{lll}
+Dualsystem        & Oktalsystem & Hexadezimalsystem \\
+101101.101        & 55.5        & 2D.A              \\
+10101011.11001101 & 253.632     & AB.CD             \\
+\end{tabular}
+\end{table}
+    
+
+\pagebreak
+
+\section{Aufgabe 3}
+textbf{Bin\"are Addition}
+125 + 199 \newline
+In Bin\"ar umwandeln: \newline
+01111101 \newline
+11000111 \newline
+=101000100 \newline
+in Dezimal 324 \newline
+
+27+30 \newline
+11011 \newline
+11110 \newline
+=111001 \newline
+in Dezimal: 57 \newline
+
+115 + 21 \newline
+1110011 \newline
+0010101\newline
+=10001000 \newline
+in Dezimal 136 \newline
+
+\pagebreak
+
+\textbf{Bin\"are Subtraktion}
+55 - 120\newline
+00110111\newline
+01111000- \newline
+Zuerst muss das unter dem Bruch in ein Zweierkomplement umgerechnet werden \newline
+Dabei wird die 1 zur 0 und die 0 zur 1. Am Ende wird noch +1 addiert \newline
+10000111\newline
+00000001+ \newline
+= 10001000 \newline
+Dieses Ergebniss wird dann vom ersten im Urspr\"unglichen Bruch abgezogen \newline
+00110111\newline
+10000111- \newline
+Das ergibt dann 10111111 \newline
+
+
+
+42 - 12 \newline
+Umrechnen in Binär:\newline
+00101010 \newline
+00001100- \newline
+=00011110 \newline
+Hier normale Subtraktion verwendet. \newline
+Wichtige Regeln: \newline
+1-1 = 0 \newline
+0-1 = 1 Rest 1 \newline
+1-0 = 1 \newline
+0-0 = 0 \newline
+
+18 - 105 \newline
+Umrechnen in Binär: \newline
+00010010 \newline
+01101001- \newline
+=10101001 \newline
+
+
+% ---------
+\section{Resumee zur dieser "Ubungsaufgabe}
+Insgesamt habe ich c.a 4 Stunden mit dieser Aufgabe verwendet.
+\begin{itemize}
+	\item Durchf"uhrung
+	\item Dokumentation
+\end{itemize}
+Welche gro"sen Probleme waren zu l"osen?
+Ich musste mir selber Wissen \"uber die verschiedenn Systeme aneignen. Das war nicht immer einfach, da dass Internet dort nicht immer eine Hilfe sein konnte.
+
+\begin{thebibliography}{99}
+% per \bibitem werden die Eintraege hier eingefuegt und per \cite{identifier}
+% im Text oben referenziert
+\bibitem{lkurz} 
+	Walter Schmidt, J"org Knappen, Hubert Partl, Irene Hyn: 
+\LaTeXe-Kurzbeschreibung, 	Version 2.3, 2003
+	
+
+\end{thebibliography}
+\end{document}
