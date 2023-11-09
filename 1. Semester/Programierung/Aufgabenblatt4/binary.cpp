@@ -16,7 +16,7 @@ int main (){
             rest = eingabe % 2;
             rechnung = eingabe / 2;
             eingabe = rechnung;
-            printf("%i", rest); //rückwärtsaufschreiben
+            printf("%i", rest);
         }while(rechnung > 0);
     }
 
