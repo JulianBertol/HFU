@@ -23,6 +23,6 @@ do{
     break_while = naeherung_a - naeherung_b;
     printf("%lf \n", naeherung_a);
 }
-while(break_while > 0.000001);
+while(break_while < 0.000001);
     printf("Das Ergebniss aus der Wurzel von %i ist: %lf",zahl_unter_wurzel, naeherung_a);
 }

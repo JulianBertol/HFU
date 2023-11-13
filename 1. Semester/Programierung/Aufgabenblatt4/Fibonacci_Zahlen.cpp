@@ -8,7 +8,7 @@ double schnitt;
 for (int i = 3; i != 21; i++){
     int fk = fk1 + fk2;
     schnitt =  static_cast<double>(fk1) / fk2 + 1;
-    printf("f(%i)=%i Schnitt = %lf \n", i, fk, schnitt);
+    printf("f(%i)=%i Schnitt = %.15lf \n", i, fk, schnitt);
     fk1 = fk2;
     fk2 = fk;
 }
