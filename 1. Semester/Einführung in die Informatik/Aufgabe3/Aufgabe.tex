@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+\usepackage{listings}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+%\usepackage{latexsym}
+
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 2}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{compile and debug}
+\subsection{Problem}
+Ich muss einen euklerischen Algoritmus erstellen. Diesen dann mit gcc oder g++ compelieren.\newline
+Danach muss ich erkl\"aren was gcc, g++ und gdb ist. \newline
+\subsection{L\"osungskonzept}
+Ich erstelle das Prgramm und teste dann was gcc, g++ und gdb machen. Wenn ich nicht weiter weis benutze ich das internet. \newline
+\subsection{konkrete L\"osung}
+euklerischer Algortihmus: \newline
+\begin{lstlisting}[language=c++]
+#include <stdio.h>
+int main() {
+    int number1;
+    int number2;
+    int ergebnis;
+    int ergebnis_rest;
+    printf("Geben Sie die erste Zahl ein: \n");
+    scanf("%i", &number1); 
+    printf("Geben Sie die zweite Zahl ein: \n"); 
+    scanf("%i", &number2);
+    do { 
+        ergebnis = number1 / number2;
+        ergebnis_rest = number1 % number2;
+        number1 = number2;
+        number2 = ergebnis_rest;
+    } while (ergebnis_rest > 0);
+    printf("Das Ergebnis lautet: %i\n", number1);
+    return 0;
+} 
+\end{lstlisting}
+\pagebreak
+Zum compelieren müssen wir mit dem command cd in das Verzeichniss gehen wo die Datei liegt. Danach compelieren wird die c++ datei entweder mit dem Befehl: \newline
+g++ "dateiname" -o "neuer Dateiname" \newline
+oder \newline
+gcc "dateiname" -o "neuer Dateiname" \newline
+mit dem befehl chmod +x "dateiname" \newline
+muss man die Zugrifssrechte auf das asuführen der Datei bearbeiten. \newline
+Nun kann man mit dem Befehl ; \newline
+./"dateiname"\newline
+die compeliete Datei ausführen. \newline
+
+\textbf{gdb} ist ein Debugger. Man kann den Debugger mit dem Befehl: \newline
+gdb "dateiname" aufrufen. \newline
+\subsection{Tests}
+Ausführen des programmes und nachrechnen. \newline
+
+\section{Aufgabe 2 Build}
+\subsection{2.1 make}
+Make ist ein build management tool. Ein Build-Management-Tool ist ein Softwarewerkzeug,
+das den Prozess der Kompilierung, des Testens und der Bereitstellung von Quellcode automatisiert,
+um eine ausführbare Anwendung oder ein Softwarepaket zu erstellen. Dieser Prozess wird als "Build"
+bezeichnet, und das Build-Management ist entscheidend für die Entwicklung von Softwareprojekten.
+Einige der Hauptaufgaben eines Build-Management-Tools umfassen \newline
+\textbf{erstellen einer makefile} \newline
+Zuerst erstellt man eine .make datei. In dieser werden dann Infortmationen zu make gespeichert. \newline
+\pagebreak
+\begin{lstlisting}[language=make]
+# Variable für Compiler-Flags. Das W steht für Warnungen aktivieren
+# und das g für Debug-Informationen
+Coption = -W -g
+
+# Regel für das Standardziel "all"
+all: euklerisch
+
+# Regel für das Ziel "euklerisch"
+euklerisch: euklerisch.cpp
+	g++ euklerisch.cpp $(Coption) -o euklerisch
+
+# Regel für das Ziel "ex" (Ausführen)
+ex: euklerisch
+	./euklerisch
+
+# Regel für das Ziel "db" (Debugging)
+db: euklerisch
+	gdb euklerisch
+
+# Regel für das Ziel "rm" (Löschen)
+rm: euklerisch    
+	rm euklerisch
+	rm euklerisch.o
+\end{lstlisting}
+
+
+\subsection{2.2 cmake}
+Cmake ist an sich das selbe wie make, nur dass cmake auf allen betriebsystemen anwendbar ist und make nur auf Unix systemen. \newline
+\begin{lstlisting}[language=make]
+cmake_minimum_required(VERSION 3.22.1) #Version angeben ist hielfreich 
+#fuer komplexe Projekte, die spezifische Funktionen oder Befehle
+#beim Build besitzen
+project (euklerisch) #Name des Projekts
+add_executable(euklerisch euklerisch.cpp) #Erstellt passende
+#build-Dateien f"ur das Projekt euklerisch.cpp
+\end{lstlisting}
+\begin{itemize}
+  \item \textbf{Worin unterscheidet sich das Ziel von make und cmake? Beschreiben Sie in eigenen Worten die Aufgabe von make.} \newline
+        Make ist eine automatisierende anwendung die den compiler automatisiert. Außerdem kann man sein Programm debuggen ohne IDEA. \newline
+        Der unterschied zwischen make und cmake besteht darin, dass cmake auf mehreren Plattformen ausführbar ist und make nur auf Unix.
+  \item \textbf{Was sollte das PHONY-Target clean machen? }\newline
+        .phony sorgt daf\"ur, dass der Befehl clean ausgef\"uhrt wird und make nicht nach einer Datei namens clean sucht und diese versucht ausf\"uhrbar zu machen.
+        Das Phony target clean sollte die Makefile2-Datei im CMakeFiles Odrner bereinigen.
+  \item \textbf{Wie wurde die Funktionserfullung gepr\"uft?}\newline
+        Die Funktionserf"ulung wurde \"uberpr\"uft, indem die Makefile Datei mit dem Befehl make ausgef\"uhrt wurde.
+        Es entsteht eine ausf\"uhrbares Programm, welches man mit dem Terminalbefehl  ./"`Dateiname"' ausf\"uhren kann.
+        Durch einsetzen von Testwerten kann man erkennen, dass das Prgramm das macht, was es soll.
+\end{itemize}
+\section{Resumee zur dieser "Ubungsaufgabe}
+Dauer f\"ur 
+\begin{itemize}
+	\item Durchf\"uhrung 1.5 Stunden
+	\item Dokumentation 0.5 Stunden
+\end{itemize}
+Welche großen Probleme waren zu l\"osen?
+Die make-file war mein gr\"oßtes Problem, da ich mich nicht mit diesem System auskannte.
+\end{document}
