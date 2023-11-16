@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persönliche Daten</title>
+  <style> /*Optische Gestaltung*/
+    *{
+      background-color: #1a2f42;
+      color: aliceblue;
+    }
+    .inline{
+      display: inline;
+    }
+    .text_rechts{
+      display: flex;
+      justify-content: space-between;
+      line-height: 0;
+    }
+    .bild{
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+    #funktion{
+      text-align: center;
+    }
+  </style>
+</head>
+<br><br><br><br><br> <!--Abstand zwischen Bild und <hr>-->
+<body>
+<h1 class="inline">Julian Bertol</h1>
+<img class="bild" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJWPiDRfILyD7anfbnIkdpwawXmn-PpbuOD6fSqzRcQ&s" alt="Foto">
+<hr>
+<!--Datein einfügen-->
+<h2>Geburtsdaten</h2>
+<div class="text_rechts">
+<h3 class="inline">Geburtsort: </h3> <p class="inline text_rechts">Berlin</p>
+</div>
+<div class="text_rechts">
+<h3 class="inline">Geburtsdatum: </h3> <p class="inline text_rechts">11.11.2011</p>
+</div>
+<hr>
+<h2>Persönliche Daten</h2>
+<div class="text_rechts">
+  <h3 class="inline">Telefon:</h3> <p class="inline text_rechts">0123 4348211</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Email: </h3> <p class="inline text_rechts">Erfunden@mail.de</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">PLZ: </h3> <p class="inline text_rechts">72942</p>
+</div>
+<div class="text_rechts">
+<h3 class="inline">Stadt:</h3> <p class="inline text_rechts">Berlin</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Straße: </h3> <p class="inline text_rechts">Bierstraße 10</p>
+</div>
+<hr>
+<h2>Schulischer Werdegang</h2>
+<div class="text_rechts">
+  <h3 class="inline">von 2010 bis 2014</h3> <p class="inline text_rechts">Grundschule</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">von 2014 bis 2021</h3> <p class="inline text_rechts">Gymnasium</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Seit 2021</h3> <p class="inline ">student AIN HFU</p>
+</div>
+<br><br><br>
+<div id="funktion">
+  <h2>Bild der Funktion: f(x) = 10 * (sin(x))²</h2>
+  <img src="funktion.png" alt="Funktion">
+</div>
+</body>
+</html>

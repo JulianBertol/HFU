@@ -1,0 +1,173 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{listings}
+%\usepackage{latexsym}
+
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 2}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{Aufgabe 1}
+
+\subsection{Problem}
+installieren von apache und Website mir pers\"onlichen Daten erstellen.
+\subsection{L\"osungskonzept}
+Durch das internet herausfinden wie ma apache installiert. HTML skills schon vorhanden.
+\subsection{konkrete L\"osung}
+Apache ist eine Open-Source-Webserver-Software f\"ur. \newline
+Diese Sprache wird auf vielen Betriebssystemen unterst\"utzt. \newline
+\textbf{Installieren von Apache}
+\begin{itemize}
+  \item sudo apt install apache2 (installiert Apache)
+\end{itemize}
+\textbf{Erstellen eines Unterordners}
+\begin{itemize}
+  \item cd /var/www/html (In den Pfad navigieren, in dem die Seite gespeichert wird)
+  \item sudo mkdir "Unterordner" (Erstellen eines Ordners Names "daten"
+  \item cd "Unterordner"         (In den Ordner Daten navigieren)
+  \item nano index.html  (Erstellen der haupt HTML Datei der Seite)
+\end{itemize}
+In unserem Fall wird die Hauptseite bearbeitet. \newline
+\textbf{Bearbeiten der Hauptseite}
+\begin{itemize}
+  \item cd /var/www/html (In den Pfad navigieren, in dem die Seite gespeichert wird)
+  \item sudo chmod julian:julian index.html (gibt rechte, das man die Datein bearbeiten darf)
+  \item index.html berabeiten.
+\end{itemize}
+
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persönliche Daten</title>
+  <style> /*Optische Gestaltung*/
+    *{
+      background-color: #1a2f42;
+      color: aliceblue;
+    }
+    .inline{
+      display: inline;
+    }
+    .text_rechts{
+      display: flex;
+      justify-content: space-between;
+      line-height: 0;
+    }
+    .bild{
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+    #funktion{
+      text-align: center;
+    }
+  </style>
+</head>
+<br><br><br><br><br> <!--Abstand zwischen Bild und <hr>-->
+<body>
+<h1 class="inline">Julian Bertol</h1>
+<img class="bild" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUJWPiDRfILyD7anfbnIkdpwawXmn-PpbuOD6fSqzRcQ&s" alt="Foto">
+<hr>
+<!--Datein einfügen-->
+<h2>Geburtsdaten</h2>
+<div class="text_rechts">
+<h3 class="inline">Geburtsort: </h3> <p class="inline text_rechts">Berlin</p>
+</div>
+<div class="text_rechts">
+<h3 class="inline">Geburtsdatum: </h3> <p class="inline text_rechts">11.11.2011</p>
+</div>
+<hr>
+<h2>Persönliche Daten</h2>
+<div class="text_rechts">
+  <h3 class="inline">Telefon:</h3> <p class="inline text_rechts">0123 4348211</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Email: </h3> <p class="inline text_rechts">Erfunden@mail.de</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">PLZ: </h3> <p class="inline text_rechts">72942</p>
+</div>
+<div class="text_rechts">
+<h3 class="inline">Stadt:</h3> <p class="inline text_rechts">Berlin</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Straße: </h3> <p class="inline text_rechts">Bierstraße 10</p>
+</div>
+<hr>
+<h2>Schulischer Werdegang</h2>
+<div class="text_rechts">
+  <h3 class="inline">von 2010 bis 2014</h3> <p class="inline text_rechts">Grundschule</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">von 2014 bis 2021</h3> <p class="inline text_rechts">Gymnasium</p>
+</div>
+<div class="text_rechts">
+  <h3 class="inline">Seit 2021</h3> <p class="inline ">student AIN HFU</p>
+</div>
+<br><br><br>
+<div id="funktion">
+  <h2>Bild der Funktion: f(x) = 10 * (sin(x))²</h2>
+  <img src="funktion.png" alt="Funktion">
+</div>
+</body>
+</html>
+\end{lstlisting}
+
+\subsection{Tests}
+um installation zu \"uberpr\"ufen im Browser die IP des rechners oder "Localhost" eingeben.
+\section{2 Python und Matplotlib}
+\subsection{2.1 Python installieren}
+\begin{itemize}
+  \item Installation von Pycharm. Hier ist das Paket Python automatisch dabei.
+  \item Installation von Matplotlib (pip install matplotlib numpy)
+\end{itemize}
+\subsection{2.2 Was ist Matplotlib}
+\begin{itemize}
+  \item Eine Bilbiothek mit der man Mathematische funktionen darstellen kann
+\end{itemize}
+
+\section{Aufgabe 3}
+% hier dann die eigene Bearbeitung einfuegen
+....
+
+% ---------
+\section{Resumee zur dieser \"Ubungsaufgabe}
+Dauer f\"ur 
+\begin{itemize}
+	\item Durchf\"uhrung
+	\item Dokumentation
+\end{itemize}
+Welche großen Probleme waren zu l\"osen?
+
+\begin{thebibliography}{99}
+% per \bibitem werden die Eintraege hier eingefuegt und per \cite{identifier}
+% im Text oben referenziert
+\bibitem{lkurz} 
+	Walter Schmidt, J\"org Knappen, Hubert Partl, Irene Hyn: 
+\LaTeXe-Kurzbeschreibung, 	Version 2.3, 2003
+	
+
+\end{thebibliography}
+\end{document}
