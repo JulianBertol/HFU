@@ -42,9 +42,6 @@ int main(){
         random[i] = randomnumber(0,50);
         printf("%i \n",random[i]);
     }
-    for (int i = 0; i < 51; i++){
-        
-    }
     }
 
     //Aufgabe 3
