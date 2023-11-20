@@ -48,5 +48,15 @@ int vorkommen(const char *s, const char *m){
 }
 
 int main(){
-printf("Vorkommen: %i", vorkommen("Dies ist ein Beispiel", "ie"));
+const int laenge = 100;
+char a [laenge];
+char b [laenge];
+printf("Geben sie den String ein den sie vergleichen wollen: \n");
+fgets(a, laenge - 1, stdin);
+printf("Geben sie die Buchstaben ein die sie abgleichen wollen: \n");
+fgets(b, laenge - 1, stdin);
+
+printf("Die Buchstaben kommen %i mal vor.", vorkommen(a,b));
+
+return 0;
 }
