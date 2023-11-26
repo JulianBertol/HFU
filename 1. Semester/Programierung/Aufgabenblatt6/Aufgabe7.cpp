@@ -5,7 +5,7 @@ int vorkommen(const char *s, const char *m){
     int counts = 0;
     int countm = 0;
     const char *ptr1 = s;
-     const char *ptr2 = m;
+    const char *ptr2 = m;
 
 
     //Länge des strings s ermitteln
@@ -15,11 +15,15 @@ int vorkommen(const char *s, const char *m){
         ptr1++;
     }
 
+    counts--;
+
     //länge des strings m ermitteln
     while (*ptr2 != '\0'){
         countm++;
         ptr2++;
     }
+    countm --;
+
     int ergebnis = 0;
 
     for(int i = 0; i <= counts; i++){

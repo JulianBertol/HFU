@@ -12,10 +12,9 @@ void zp(int a, int b){
     }
 
     int rechnung = 1;
-    do
-    {
+    while (pow(2,rechnung) <= a) {
         rechnung ++;
-    } while (pow(2,rechnung) <= a);
+    }
 
     int zahl = rechnung;
 
