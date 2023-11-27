@@ -39,12 +39,33 @@ where AGE is NULL
 select avg(AGE) as durchschnitt, max(AGE) as maximal, min(AGE) as minimal from TITANIC
 
 --f)
-SELECT
-  AVG(CASE WHEN SURVIVED = 1 THEN AGE END) AS Durchschnitt_ueberlebende,
-  AVG(CASE WHEN SURVIVED = 0 THEN AGE END) AS Durchschnitt_nicht_ueberlebende
-FROM TITANIC;
+Select avg(AGE) as durchschnitsalter, SURVIVED
+from TITANIC
+group by SURVIVED
 
 --g)
-select distinct BOAT, Name from TITANIC
-where BOAT is not null and BOAT not like '%___'
+select BOAT from TITANIC
+where BOAT is not NULL and BOAT like '_'
 
+--h)
+select distinct BOAT as Boot, count(NAME) as Anzahl from TITANIC
+where BOAT is not NULL
+group by BOAT
+
+--i)
+select distinct BOAT as Boot, count(NAME) as Anzahl from TITANIC
+where BOAT is not NULL
+group by BOAT
+having count(NAME) >= 25
+
+--j)
+select * from TITANIC
+where TICKET =(
+select TICKET from TITANIC
+group by TICKET
+having sum(FAREINT) != min(FAREINT) * count (FAREINT)
+)
+
+--k)
+select CLASS as Klasse, count(SURVIVED) as Anzahl, SURVIVED as Überlebt from TITANIC
+group by CLASS, SURVIVED
