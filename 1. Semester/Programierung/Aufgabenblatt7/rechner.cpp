@@ -2,40 +2,47 @@
 #include <stdlib.h>
 
 int berechne(char op, int v1, int v2){
-int rechnung = 0;
-switch (op)
-{
-case '+':
-    rechnung = v1 + v2;
-    break;
+    int rechnung;
+    switch (op)
+    {
+    case '*':
+        rechnung = v1 * v2;
+        break;
 
-case '-':
-    rechnung = v1 - v2;
-    break;
+    case '+':
+        rechnung = v1 + v2;
+        break;
 
-case '*':
-    rechnung = v1 * v2;
-    break;
+    case '-':
+        rechnung = v1 - v2;
+        break;
 
-case '/':
-    if (v1 == 0 || v2 == 0){
-        printf("Bei einer division darf kein Wert 0 sein!");
+    case '/':
+        rechnung = v1 / v2;
+        break;
+    
+    default:
+        rechnung = -999;
+        break;
     }
-    rechnung = v1 / v2;
-    break;
 
-default:
-    rechnung = -999;
-    break;
+    return rechnung;
 }
 
-return rechnung;
-}
-
-int main(int argc, char* argv[]){
-int aoi(const char* s);
-printf("%c \n", aoi);
-printf("Druecken sie Enter um das Programm zu schliessen!");
-scanf("%c");
-return 0;
+int main (int argc, char* argv[]){
+    argc --;
+    if (argc > 3){
+        printf("Du hast zu viel eingegeben! \n");
+    }else if(!atoi(argv[2]) || !atoi(argv[3])){
+        printf("Du hast keine Zahl eingegeben!\n");
+    }else{
+    printf("Operator: %c \n", *argv[1]);
+    printf("erster int: %i\n", atoi(argv[2]));
+    printf("zweiter int: %i\n", atoi(argv[3]));
+    printf("%i \n", berechne(*argv[1], atoi(argv[2]), atoi(argv[3])));
+    }
+    
+    printf("Press Enter to leave");
+    scanf("%C");
+    return 0;
 }
