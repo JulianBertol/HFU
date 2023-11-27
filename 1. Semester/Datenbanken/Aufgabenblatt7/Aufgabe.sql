@@ -45,16 +45,16 @@ group by SURVIVED
 
 --g)
 select BOAT from TITANIC
-where BOAT is not NULL and BOAT like '_'
+where BOAT is not NULL and BOAT not like '% %'
 
 --h)
 select distinct BOAT as Boot, count(NAME) as Anzahl from TITANIC
-where BOAT is not NULL
+where BOAT is not NULL and BOAT not like '% %'
 group by BOAT
 
 --i)
 select distinct BOAT as Boot, count(NAME) as Anzahl from TITANIC
-where BOAT is not NULL
+where BOAT is not NULL and BOAT not like '% %'
 group by BOAT
 having count(NAME) >= 25
 
