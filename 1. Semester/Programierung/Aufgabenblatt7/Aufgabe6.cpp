@@ -20,6 +20,10 @@ void stat(const char* s, int* z, int* w){
     int words = 0;
     while(*s != '\0'){
         if (isspace(*s)){
+        while (isspace(*s))
+        {
+            s++;
+        }
             words++;
         }
         s++;

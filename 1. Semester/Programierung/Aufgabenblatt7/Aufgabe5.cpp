@@ -18,9 +18,14 @@ void stat(const char* s){
     s = s -character;
 
     int words = 0;
-    while(*s != '\0'){
+    while(*s != '\0')
+    {
         if (isspace(*s)){
-            words++;
+        while (isspace(*s))
+        {
+            s++;
+        }
+        words++;
         }
         s++;
     }
