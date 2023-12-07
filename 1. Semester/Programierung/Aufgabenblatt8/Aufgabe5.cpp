@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Achtung! alle Vektoren wurden falsch erechnet
+
 struct Vektor
 {
     float x, y;

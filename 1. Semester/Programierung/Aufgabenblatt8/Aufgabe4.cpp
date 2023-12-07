@@ -32,8 +32,8 @@ if(a.year < b.year){
 };
 
 int main(){
-    Datum date = {21,Datum::Januar,2021};
-    Datum date2 = {22, Datum::Mai, 2020};
+    Datum date = {21,Datum::Mai,2022};
+    Datum date2 = {21, Datum::Mai, 2022};
     Datum *pdate = &date;
     Datum *pdate2 = &date2;
 
