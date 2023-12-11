@@ -8,7 +8,7 @@ create table Dozent(
     firstname varchar (20),
     lastname varchar(20),
     Geburtsdatum date,
-    fakultät int references Fakultät
+    fakultät int references Fakultät not null 
 )
 
 create table Student(
@@ -28,11 +28,10 @@ create table Vorlesung(
 )
 
 create table student_vorlesung(
-id int generated always as identity primary key,
 name int references STUDENT,
-Vorlesung int references Vorlesung
+Vorlesung int references Vorlesung,
+primary key (name, vorlesung)
 )
-alter table student_vorlesung add constraint un_name_vorlesung unique(name,vorlesung)
 
 insert into FAKULTÄT(name) values ('Informatik')
 insert into FAKULTÄT(name) values ('Digitale Medien')
@@ -60,19 +59,19 @@ insert into VORLESUNG(Fachname, Dozent) values('Mathematik', 3);
 insert into VORLESUNG(Fachname, Dozent) values('Datenbanken', 1);
 insert into VORLESUNG(Fachname, Dozent) values('Programieren', 2);
 
-insert into student_vorlesung(name, vorlesung) values(1,1)
-insert into student_vorlesung(name, vorlesung) values(1,2)
-insert into student_vorlesung(name, vorlesung) values(1,3)
-insert into student_vorlesung(name, vorlesung) values(2,1)
-insert into student_vorlesung(name, vorlesung) values(2,2)
-insert into student_vorlesung(name, vorlesung) values(2,3)
-insert into student_vorlesung(name, vorlesung) values(3,1)
-insert into student_vorlesung(name, vorlesung) values(3,2)
-insert into student_vorlesung(name, vorlesung) values(3,3)
-insert into student_vorlesung(name, vorlesung) values(4,1)
-insert into student_vorlesung(name, vorlesung) values(4,2)
-insert into student_vorlesung(name, vorlesung) values(4,3)
-insert into student_vorlesung(name, vorlesung) values(5,3)
-insert into student_vorlesung(name, vorlesung) values(5,2)
-insert into student_vorlesung(name, vorlesung) values(6,2)
-insert into student_vorlesung(name, vorlesung) values(7,1)
+insert into student_vorlesung(name, vorlesung) values(1,1);
+insert into student_vorlesung(name, vorlesung) values(1,2);
+insert into student_vorlesung(name, vorlesung) values(1,3);
+insert into student_vorlesung(name, vorlesung) values(2,1);
+insert into student_vorlesung(name, vorlesung) values(2,2);
+insert into student_vorlesung(name, vorlesung) values(2,3);
+insert into student_vorlesung(name, vorlesung) values(3,1);
+insert into student_vorlesung(name, vorlesung) values(3,2);
+insert into student_vorlesung(name, vorlesung) values(3,3);
+insert into student_vorlesung(name, vorlesung) values(4,1);
+insert into student_vorlesung(name, vorlesung) values(4,2);
+insert into student_vorlesung(name, vorlesung) values(4,3);
+insert into student_vorlesung(name, vorlesung) values(5,3);
+insert into student_vorlesung(name, vorlesung) values(5,2);
+insert into student_vorlesung(name, vorlesung) values(6,2);
+insert into student_vorlesung(name, vorlesung) values(7,1);
