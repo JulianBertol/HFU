@@ -1,0 +1,1 @@
+Diese Aufgabe wurde per Hand auf Papier erledigt und wird somit nicht auf Github hochgeladen.
