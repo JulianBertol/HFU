@@ -1,0 +1,90 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{latexsym}
+
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 2}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{Aufgabe 1}
+L\"osen sie folgende Terme
+
+\subsection{Problem}
+Mann muss die gegebenen Terme l\"osen
+\subsection{L\"osungskonzept}
+Folien letzter Vorlesung anschauen und Aufgaben bearbeiten.
+\subsection{konkrete L\"osung}
+\subsubsection{Aufgabe 1.2}
+\begin{itemize}
+  \item $\neg \blacksquare = \square$
+  \item $\neg \square \bigvee \square = \blacksquare$
+  \item $(\blacksquare \bigvee \blacksquare) \bigwedge \neg (\blacksquare \bigvee \blacksquare) = \square$
+  \item $!(1 \&\& (1 \,||\, (1 \&\& (0 \,||\, 1)))) \&\& 1 = 0$
+\end{itemize}
+
+\subsubsection{Aufgabe 1.3}
+\begin{itemize}
+  \item $(\neg a \bigvee \neg b) \bigwedge (\neg a \bigvee b) \bigwedge (a \bigvee \neg b) = a \bigwedge \neg b$
+  \item $(a \bigwedge b) \bigvee (a \bigwedge c) \bigvee (b \bigwedge \neg c) = $
+  \item $(a \bigvee b) \bigwedge (\neg a \bigvee b) \bigwedge (a \bigvee \neg b) \bigwedge (\neg a \bigvee \neg b) = $
+  \item $ a \bigvee (\neg b \bigwedge \neg (a \bigvee b \bigvee c)) = $
+  \item $(a\&\&!b)||(a\&\&!b\&\&c) = $
+  \item $(a||!(b\&\&a))\&\&(c||(d||c)) = $
+  \item $(\neg (a\bigwedge b)\bigvee \neg c) \bigwedge (\neg a \bigvee v \bigvee \neg c) = $
+  \item $\neg (\neg (a \bigwedge b) \bigvee c) \bigvee (a \bigwedge c) = $
+\end{itemize}
+\subsection{Tests}
+Wie kann ich sicher sein, dass meine Ergebnisse auch stimmen?
+
+\section{Aufgabe 2}
+% hier dann die eigene Bearbeitung einfuegen
+Sollte es mal mit Mathematik im Text losgehen, dann sind besondere
+Formatierungen notwendig. So kann mit \$ als Schalter die Mathematik
+an- und ausgeschaltet werden.\\
+Z.B. $10_2$ oder $10_{16}$
+
+\section{Aufgabe 3}
+% hier dann die eigene Bearbeitung einfuegen
+....
+
+% ---------
+\section{Resumee zur dieser \"Ubungsaufgabe}
+Dauer f\"ur 
+\begin{itemize}
+	\item Durchf\"uhrung
+	\item Dokumentation
+\end{itemize}
+Welche großen Probleme waren zu l\"osen?
+
+\begin{thebibliography}{99}
+% per \bibitem werden die Eintraege hier eingefuegt und per \cite{identifier}
+% im Text oben referenziert
+\bibitem{lkurz} 
+	Walter Schmidt, J\"org Knappen, Hubert Partl, Irene Hyn: 
+\LaTeXe-Kurzbeschreibung, 	Version 2.3, 2003
+	
+
+\end{thebibliography}
+\end{document}

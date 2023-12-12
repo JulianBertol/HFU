@@ -1,0 +1,103 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{latexsym}
+
+\usepackage[pdftex]{hyperref}
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 2}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{Aufgabe 1}
+L\"osen sie folgende Terme
+
+\subsection{Problem}
+Mann muss die gegebenen Terme l\"osen
+\subsection{L\"osungskonzept}
+Folien letzter Vorlesung anschauen und Aufgaben bearbeiten.
+\subsection{konkrete L\"osung}
+\subsubsection{Aufgabe 1.2}
+\begin{itemize}
+  \item $\neg \blacksquare = \square$
+  \item $\neg \square \bigvee \square = \blacksquare$
+  \item $(\blacksquare \bigvee \blacksquare) \bigwedge \neg (\blacksquare \bigvee \blacksquare) = \square$
+  \item $!(1 \&\& (1 \,||\, (1 \&\& (0 \,||\, 1)))) \&\& 1 = 0$
+\end{itemize}
+
+\subsubsection{Aufgabe 1.3}
+\begin{itemize}
+  \item 1. $(\neg a \bigvee \neg b) \bigwedge (\neg a \bigvee b) \bigwedge (a \bigvee \neg b) = a \bigwedge \neg b$
+  \item 2. $(a \bigwedge b) \bigvee (a \bigwedge c) \bigvee (b \bigwedge \neg c) = a \bigwedge \neg c$
+  \item 3. $(a \bigvee b) \bigwedge (\neg a \bigvee b) \bigwedge (a \bigvee \neg b) \bigwedge (\neg a \bigvee \neg b) = false$
+  \item 4. $ a \bigvee (\neg b \bigwedge \neg (a \bigvee b \bigvee c)) = a$
+  \item 5. $(a\&\&!b)||(a\&\&!b\&\&c) = a \bigwedge \neg b$
+  \item 6. $(a||!(b\&\&a))\&\&(c||(d||c)) = a \bigwedge c$
+  \item 7. $(\neg (a\bigwedge b)\bigvee \neg c) \bigwedge (\neg a \bigvee v \bigvee \neg c) = \neg (a \bigwedge b) \bigvee \neg c$
+  \item 8. $\neg (\neg (a \bigwedge b) \bigvee c) \bigvee (a \bigwedge c) = (a \bigwedge b) \bigwedge \neg c$
+\end{itemize}
+\subsection{Tests}
+Wie kann ich sicher sein, dass meine Ergebnisse auch stimmen?
+
+\section{Aufgabe 2}
+\subsection{Wozu dient Git}
+Git ist dazu da, um von einem Softwareprojekt versionen zu verwalten. Dies bedeutet, man kann seinen Code auf Github hochladen und ihn dann anderen zu verfügung stellen und seinen Code einfach updaten. Die Adresse meines Repositorys lautet: https://github.com/JulianFaller/EII-Test
+
+\subsection{Installation}
+\begin{itemize}
+  \item Auf Windows gitbash installieren
+  \item Auf Linux: sudo apt-get install git-all
+  \item mit cd in ein verzeichnis und git init ausführen
+  \item git remote main add remmoteverzeichniss um zu erstellen
+  \item um Verzeichnis zu klonen git clone remote verzeichnis
+\end{itemize}
+
+\subsection{An der gleichen Datei arbeiten}
+In git ist es möglich an der selben Dateii zu arbeiten. Mann kann einen merge machen und seine Dateien zusammenfügen.
+
+\subsection{Wie lassen sich rechte bearbeiten}
+Man kann auf Github verschiedene Rollen für benutzer einstellen. Ein Konflikt wäre, wenn 2 an einer Datei arbeiten aber da kann man den oben genannten merge verwenden. Man kann beispielsweise einstellen, das man nur über pull request sachen ändern kann. Dabei muss dann jemand den Code überprüfen und freigeben
+
+
+\section{Aufgabe 3}
+% hier dann die eigene Bearbeitung einfuegen
+....
+
+% ---------
+\section{Resumee zur dieser \"Ubungsaufgabe}
+Dauer f\"ur 
+\begin{itemize}
+	\item Durchf\"uhrung
+	\item Dokumentation
+\end{itemize}
+Welche großen Probleme waren zu l\"osen?
+
+\begin{thebibliography}{99}
+% per \bibitem werden die Eintraege hier eingefuegt und per \cite{identifier}
+% im Text oben referenziert
+\bibitem{lkurz} 
+	Walter Schmidt, J\"org Knappen, Hubert Partl, Irene Hyn: 
+\LaTeXe-Kurzbeschreibung, 	Version 2.3, 2003
+	
+
+\end{thebibliography}
+\end{document}
