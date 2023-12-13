@@ -1,3 +1,4 @@
+#include "stack.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,6 +35,7 @@ char pop(){
     return ' ';
 }
 
+
 char top(){
     if (s.top == -1){
         printf("Der Stapel ist leer");
@@ -61,6 +63,7 @@ if (empty() && checked){
     exit(EXIT_SUCCESS);
 }else if(empty() && !checked){
     printf("Inkorrekte Zeichenkette");
+    exit(EXIT_SUCCESS);
 }
 
 
@@ -73,6 +76,7 @@ if(top() == ')' || top() == '}' || top() == ']'){
             check();
         }
         printf("Inkorrekte Zeichenkette");
+        exit(EXIT_SUCCESS);
     }else if(top() == '}'){
         pop();
         if(top() == '{'){
@@ -81,6 +85,7 @@ if(top() == ')' || top() == '}' || top() == ']'){
             check();
         }
         printf("Inkorrekte Zeichenkette");
+        exit(EXIT_SUCCESS);
     }else if(top() == ']'){
         pop();
         if(top() == '['){
@@ -89,27 +94,12 @@ if(top() == ')' || top() == '}' || top() == ']'){
             check();
         }
         printf("Inkorrekte Zeichenkette");
+        exit(EXIT_SUCCESS);
     }
 
 }else{
     printf("Inkorrekte Zeichenkette!");
+    exit(EXIT_SUCCESS);
 }
 
-}
-
-int main(){
-    char string[MAX_LENGTH];
-    printf("Enter a string: \n");
-    fgets(string, MAX_LENGTH - 1, stdin);
-    clear();
-    for (int i = 0; string[i] != '\0'; i++){
-        if (string[i] == '\n') { //fgets macht ein \n an das ende deshalb das hier
-        string[i] = '\0';
-        break;
-    }
-        push(string[i]);
-    }
-
-    check();
-    return 0;
 }
