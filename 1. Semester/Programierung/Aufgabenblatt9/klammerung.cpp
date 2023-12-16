@@ -14,6 +14,7 @@ char pop(){
 -> Fehler gibt es schon
 */
 
+
 int main(){
     char string[MAX_LENGTH];
     printf("Enter a string: \n");
@@ -27,6 +28,6 @@ int main(){
         push(string[i]);
     }
 
-    check();
+    check(string);
     return 0;
 }

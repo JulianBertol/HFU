@@ -56,50 +56,44 @@ bool empty(){
     return false;
 }
 
-bool checked = false;
-void check(){
-if (empty() && checked){
-    printf("Korrekte Zeichenkette");
-    exit(EXIT_SUCCESS);
-}else if(empty() && !checked){
-    printf("Inkorrekte Zeichenkette");
-    exit(EXIT_SUCCESS);
-}
 
+void check(const char *input_string)
+{
+    clear();
 
-if(top() == ')' || top() == '}' || top() == ']'){
-    if(top() == ')'){
-        pop();
-        if (top() == '('){
-            checked = true;
-            pop();
-            check();
+    for (int i = 0; input_string[i] != '\0'; i++)
+    {
+        char current_char = input_string[i];
+
+        if (current_char == '(' || current_char == '[' || current_char == '{')
+        {
+            push(current_char);
         }
-        printf("Inkorrekte Zeichenkette");
-        exit(EXIT_SUCCESS);
-    }else if(top() == '}'){
-        pop();
-        if(top() == '{'){
-            checked = true;
-            pop();
-            check();
+        else if (current_char == ')' || current_char == ']' || current_char == '}')
+        {
+            if (empty())
+            {
+                printf("Fehler: Schließende Klammer ohne entsprechende öffnende Klammer.\n");
+                return;
+            }
+
+            char last_opening_bracket = pop();
+
+            if ((current_char == ')' && last_opening_bracket != '(') ||
+                (current_char == ']' && last_opening_bracket != '[') ||
+                (current_char == '}' && last_opening_bracket != '{'))
+            {
+                printf("Fehler: Klammerung ist nicht korrekt.\n");
+                return;
+            }
         }
-        printf("Inkorrekte Zeichenkette");
-        exit(EXIT_SUCCESS);
-    }else if(top() == ']'){
-        pop();
-        if(top() == '['){
-            checked = true;
-            pop();
-            check();
-        }
-        printf("Inkorrekte Zeichenkette");
-        exit(EXIT_SUCCESS);
     }
 
-}else{
-    printf("Inkorrekte Zeichenkette!");
-    exit(EXIT_SUCCESS);
-}
+    if (!empty())
+    {
+        printf("Fehler: Es gibt nicht geschlossene Klammern.\n");
+        return;
+    }
 
+    printf("Die Klammerung ist korrekt.\n");
 }

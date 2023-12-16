@@ -22,7 +22,7 @@ void push(char c){
 
 char pop(){
     if (s.top == 0){
-        printf("Der Stapel ist leer");
+        printf("Der Stapel ist leer \n");
         
     }else{
         return s.stack[s.top--];
@@ -32,7 +32,7 @@ char pop(){
 
 char top(){
     if (s.top == 0){
-        printf("Der Stapel ist leer");
+        printf("Der Stapel ist leer \n");
     }else{
         return s.stack[s.top];
     }
@@ -57,9 +57,11 @@ void clear(){
 int main(){
     clear();
     char c = 's';
+    push('a');
+    push('b');
     push(c);
     printf("added: %c\n", s.stack[s.top]);
-    //printf("removed: %c\n", pop() );
+    printf("removed: %c\n", pop() );
     printf("on Top = %c \n",top());
     printf("Size: %i \n", size());
     printf("empty? %i \n", empty());

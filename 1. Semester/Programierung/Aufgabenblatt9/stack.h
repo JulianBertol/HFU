@@ -5,6 +5,6 @@ char pop();
 char top();
 unsigned int size();
 bool empty();
-void check();
+void check(const char *input_string);
 
 #endif
