@@ -34,16 +34,16 @@ where embarked_id = (select distinct(embarked_id) from titanic
 select name
 from titanic
 where embarked_id = (select embarked_id from titanic 
-where embarked_id is not null order by embarked_id asc limit 1)
+                    where embarked_id is not null
+                    order by embarked_id asc 
+                    limit 1)
 
 --f)
 select name, age
 from titanic
-where age>= any (select age from titanic)
+where age>= all (select age from titanic where age is not null)
 
---wenn wie in Aufgabe 1 funktionieren soll dann
+--oder 
 select name, age
 from titanic
-where age>= any (select age from titanic)
-order by age desc
-limit 1
+where age>= all (select max(age) from titanic)
