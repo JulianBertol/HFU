@@ -1,0 +1,186 @@
+\documentclass[a4paper,11pt,titlepage]{article}
+
+\usepackage{ucs}
+% per input encoding kann man Umlaute direkt einsetzten, aber  dann ist man von Font des jeweiligen Rechners abh"angig. Daher mag ich es nicht!
+%\usepackage[utf8x]{inputenc}
+\usepackage[german,ngerman]{babel}
+\usepackage{fontenc}
+\usepackage[pdftex]{graphicx}
+%\usepackage{latexsym}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[pdftex]{hyperref}
+
+\lstdefinestyle{console}{
+  backgroundcolor=\color{black},
+  basicstyle=\color{white}\ttfamily,
+  breaklines=true,
+  showstringspaces=false
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{python}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\lstset{style=python}
+
+
+\begin{document}
+
+% hier aktuelle Uebungsnummer einfuegen
+\title{Einf\"uhrung in die Informatik\\
+Ausarbeitung \"Ubung 6}
+
+% Namen der Bearbeiter einfuegen
+
+\author{Julian Bertol}
+
+% aktuelles Datum einfuegen
+
+\date{\today}
+
+\maketitle{\thispagestyle{plain}}
+
+\section{Aufgabe 1}
+Der Titel "`Aufgabe 1"' ist durch den konkreten Aufgabentitel zu ersetzen!
+Wie man mit LaTeX gut umgehen kann ist in \cite{lkurz} gut beschrieben.
+... und auch in vielen Beispielen im Internet aufzufinden.
+
+\subsection{Problem}
+Das muss ich erst mal selbst formulieren, damit mir klar wurde was ich tun soll ...
+\subsection{L\"osungskonzept}
+Installiern von Jupyter Notebook \newline
+Installieren von Python (Falls noch nicht geschehen) \newline
+\begin{lstlisting}[style=console]
+sudo apt-get install python3
+sudo apt-get install python3-pip
+\end{lstlisting}
+Installieren von Jupyter Notebook \newline
+\begin{lstlisting}[style=console]
+sudo pip3 install jupyter
+\end{lstlisting}
+Installieren von Pytorch
+\begin{lstlisting}[style=console]
+sudo pip install torch torchvision
+\end{lstlisting}
+Code der Aufgabe:
+\begin{lstlisting}[style=python]
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+import matplotlib.pyplot as plt
+import numpy as np
+import torchvision
+
+# Schritt 2: Datenbeschaffung
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize((0.5,), (0.5,))
+])
+
+train_dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
+test_dataset = datasets.MNIST(root='./data', train=False, download=True, transform=transform)
+
+batch_size = 64
+
+train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True, num_workers=2)
+test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=False, num_workers=2)
+
+# Schritt 3: Erstellen des neuronalen Netzes
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.fc1 = nn.Linear(28 * 28, 128)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(128, 10)
+
+    def forward(self, x):
+        x = x.view(-1, 28 * 28)
+        x = self.relu(self.fc1(x))
+        x = self.fc2(x)
+        return x
+
+# Schritt 4: Training des Modells
+model = SimpleNN()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
+
+epochs = 5
+train_losses = []
+
+for epoch in range(epochs):
+    running_loss = 0.0
+    for inputs, labels in train_loader:
+        optimizer.zero_grad()
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+        running_loss += loss.item()
+
+    train_loss = running_loss / len(train_loader)
+    train_losses.append(train_loss)
+    print(f'Epoch {epoch+1}/{epochs}, Training Loss: {train_loss}')
+
+# Schritt 5: Evaluation des Modells
+model.eval()
+correct = 0
+total = 0
+
+with torch.no_grad():
+    for inputs, labels in test_loader:
+        outputs = model(inputs)
+        _, predicted = torch.max(outputs.data, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+
+accuracy = correct / total
+print(f'Test Accuracy: {accuracy * 100:.2f}%')
+
+# Optional: Visualisierung
+def imshow(img):
+    img = img / 2 + 0.5  # Denormalisieren
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    plt.show()
+
+# Visualisierung einiger Vorhersagen
+# Visualisierung einiger Vorhersagen
+dataiter = iter(test_loader)
+images, labels = next(dataiter)
+
+imshow(torchvision.utils.make_grid(images))
+print('GroundTruth:', ' '.join('%5s' % labels[j] for j in range(4)))
+
+outputs = model(images)
+_, predicted = torch.max(outputs, 1)
+
+print('Predicted:', ' '.join('%5s' % predicted[j] for j in range(4)))
+
+\end{lstlisting}
+Beobachtet man die Relation von Loss, Epochen und Genaugkeit, so l\"asst sich ein absinken des Losses und der Genauigkeit ab ca. 3 Epochen beobachten.
+Mit 20 Epochen hat man jedoch noch ein sehr gutes Ver\"haltnis von Dauer und Genauigkeit.
+Trainiert man weiter, l\"auft man Gefahr das Modell zu \"ubertrainieren, was zu einer schlechteren Genauigkeit f\"uhren kann.
+\end{document}
