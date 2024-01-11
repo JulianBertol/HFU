@@ -1,12 +1,17 @@
 #ifndef __SAVEARRAY_H
 #define __SAVEARRAY_H
 
-    bool setAt(unsigned int pos, int val);
+class SaveArray{
+    public:
+            SaveArray(unsigned int set);
 
-    int getAt(unsigned int pos);
+            bool setAt(unsigned int pos, int val);
 
-    int getMinimum();
+            int getAt(unsigned int pos);
 
-    bool fill(unsigned int pos1, unsigned int pos2, int value);
+            int getMinimum();
+
+            bool fill(unsigned int pos1, unsigned int pos2, int value);
+};
 
 #endif

@@ -1,32 +1,28 @@
 #include "SaveArray.h"
 #include <stdio.h>
 
-class SaveArray{
-    #define length 100
-    int array[length];
-    public:
-            SaveArray(unsigned int set){
+#define length 100
+int array[length];
+
+SaveArray::SaveArray(unsigned int set){
                 for(int i = 0; i < length - 1; i++){
                 array[i] = set;
                 }
             }
-
-            bool setAt(unsigned int pos, int val){
-                if(pos <= length - 1){
+bool SaveArray::setAt(unsigned int pos, int val){
+                if(pos < length){
                 array[pos] = val;
                 return true;
                 }
                 return false;
             }
-
-            int getAt(unsigned int pos){
+int SaveArray::getAt(unsigned int pos){
                 if(pos <= length - 1){
                     return array[pos];
                 }
                 return -999;
             }
-
-            int getMinimum(){
+int SaveArray::getMinimum(){
                 for(int i = 0; i < length - 1; i++){
                     for(int j = 0; j < length - i - 1; j++){
                         int *pa = array + j;
@@ -40,14 +36,11 @@ class SaveArray{
                 }
                 return array[0];
             }
-
-            bool fill(unsigned int pos1, unsigned int pos2, int value){
+bool SaveArray::fill(unsigned int pos1, unsigned int pos2, int value){
                 if(pos2 < pos1){
-                    printf("here1\n");
                     return false;
                 }
                 else if(pos2 >= 100){
-                    printf("here2\n");
                     return false;
                 }
                 
@@ -58,4 +51,3 @@ class SaveArray{
                 }
                 return true;
             }
-};
