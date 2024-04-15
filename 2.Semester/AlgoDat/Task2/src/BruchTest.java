@@ -21,7 +21,7 @@ public class BruchTest {
             System.out.println(z.get());
         }
 
-        x.e(10);
+        x.e(8);
         System.out.println(x.get());
 
     }
