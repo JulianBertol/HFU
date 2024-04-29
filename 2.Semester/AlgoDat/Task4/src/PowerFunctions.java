@@ -1,8 +1,9 @@
-import Task1.Counter;
+import task1.Counter;
 
 public class PowerFunctions{
     private static Counter powerCounter = new Counter();
     private static Counter fastPowerCounter = new Counter();
+            
     public static double Power(double x, int n){
         double res = x;
         for(int i = 0; i < n - 1 ; i++){

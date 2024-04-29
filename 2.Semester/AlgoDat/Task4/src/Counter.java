@@ -1,4 +1,4 @@
-package Task1;
+package task1;
 
 public class Counter{
     private int x; //zähler
