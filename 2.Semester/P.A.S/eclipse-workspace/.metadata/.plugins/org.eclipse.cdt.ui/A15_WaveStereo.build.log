@@ -1,0 +1,15 @@
+12:24:54 **** Incremental Build of configuration Debug_with_Linux GCC for project A15_WaveStereo ****
+make all 
+Building file: ../A15_WaveStereo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A15_WaveStereo.d" -MT"A15_WaveStereo.o" -o "A15_WaveStereo.o" "../A15_WaveStereo.cpp"
+Finished building: ../A15_WaveStereo.cpp
+ 
+Building target: A15_WaveStereo
+Invoking: GCC C++ Linker
+g++  -o "A15_WaveStereo"  ./A15_WaveStereo.o   -lsndfile
+Finished building target: A15_WaveStereo
+ 
+
+12:24:55 Build Finished. 0 errors, 0 warnings. (took 814ms)
+

@@ -1,0 +1,15 @@
+16:04:30 **** Incremental Build of configuration Debug_with_Linux GCC for project A14_EmployeeWithMutex ****
+make all 
+Building file: ../A14_EmployeeWithMutex.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A14_EmployeeWithMutex.d" -MT"A14_EmployeeWithMutex.o" -o "A14_EmployeeWithMutex.o" "../A14_EmployeeWithMutex.c"
+Finished building: ../A14_EmployeeWithMutex.c
+ 
+Building target: A14_EmployeeWithMutex
+Invoking: GCC C Linker
+gcc  -o "A14_EmployeeWithMutex"  ./A14_EmployeeWithMutex.o   -lpthread
+Finished building target: A14_EmployeeWithMutex
+ 
+
+16:04:31 Build Finished. 0 errors, 0 warnings. (took 398ms)
+

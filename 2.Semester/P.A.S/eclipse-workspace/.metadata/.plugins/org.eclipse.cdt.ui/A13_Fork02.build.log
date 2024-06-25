@@ -1,0 +1,15 @@
+14:06:25 **** Incremental Build of configuration Debug_with_Linux GCC for project A13_Fork02 ****
+make all 
+Building file: ../A13_Fork02.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A13_Fork02.d" -MT"A13_Fork02.o" -o "A13_Fork02.o" "../A13_Fork02.c"
+Finished building: ../A13_Fork02.c
+ 
+Building target: A13_Fork02
+Invoking: GCC C Linker
+gcc  -o "A13_Fork02"  ./A13_Fork02.o   
+Finished building target: A13_Fork02
+ 
+
+14:06:26 Build Finished. 0 errors, 0 warnings. (took 887ms)
+

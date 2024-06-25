@@ -1,0 +1,15 @@
+15:09:28 **** Incremental Build of configuration Debug_with_Cross GCC for project A14_Threads01 ****
+make all 
+Building file: ../A14_Threads01.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A14_Threads01.d" -MT"A14_Threads01.o" -o "A14_Threads01.o" "../A14_Threads01.c"
+Finished building: ../A14_Threads01.c
+ 
+Building target: A14_Threads01
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "A14_Threads01"  ./A14_Threads01.o   -lpthread
+Finished building target: A14_Threads01
+ 
+
+15:09:28 Build Finished. 0 errors, 0 warnings. (took 452ms)
+

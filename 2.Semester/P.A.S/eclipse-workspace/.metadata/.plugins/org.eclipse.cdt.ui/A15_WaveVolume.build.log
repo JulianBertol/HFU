@@ -1,0 +1,15 @@
+12:18:19 **** Incremental Build of configuration Debug_with_Linux GCC for project A15_WaveVolume ****
+make all 
+Building file: ../A15_WaveVolume.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A15_WaveVolume.d" -MT"A15_WaveVolume.o" -o "A15_WaveVolume.o" "../A15_WaveVolume.cpp"
+Finished building: ../A15_WaveVolume.cpp
+ 
+Building target: A15_WaveVolume
+Invoking: GCC C++ Linker
+g++  -o "A15_WaveVolume"  ./A15_WaveVolume.o   -lsndfile
+Finished building target: A15_WaveVolume
+ 
+
+12:18:20 Build Finished. 0 errors, 0 warnings. (took 800ms)
+

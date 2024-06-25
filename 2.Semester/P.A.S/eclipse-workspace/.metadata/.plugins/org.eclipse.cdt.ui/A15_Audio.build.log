@@ -1,0 +1,37 @@
+16:03:16 **** Incremental Build of configuration Debug_with_Cross GCC for project A15_Audio ****
+make all 
+Building file: ../A15_Audio.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -I/usr/include -O0 -g3 -Wall --sysroot=/mnt/rootfs -MMD -MP -MF"A15_Audio.d" -MT"A15_Audio.o" -o "A15_Audio.o" "../A15_Audio.cpp"
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/bin/ld: warning: libm.so.6, needed by /opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so, not found (try using -rpath or -rpath-link)
+/tmp/ccynvkVz.o: In function `SndfileHandle::SNDFILE_ref::~SNDFILE_ref()':
+/usr/include/sndfile.hh:163: undefined reference to `sf_close'
+/tmp/ccynvkVz.o: In function `SndfileHandle::SndfileHandle(char const*, int, int, int, int)':
+/usr/include/sndfile.hh:181: undefined reference to `sf_open'
+/tmp/ccynvkVz.o: In function `SndfileHandle::write(float const*, long long)':
+/usr/include/sndfile.hh:356: undefined reference to `sf_write_float'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `acos@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `hypot@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `cos@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `fmod@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `tan@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `atan@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `asin@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `sqrt@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `ceil@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `atan2@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `sin@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `tanh@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `sinh@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `pow@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `log@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `floor@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `log10@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `exp@GLIBC_2.4'
+/opt/crosstool/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libstdc++.so: undefined reference to `cosh@GLIBC_2.4'
+collect2: error: ld returned 1 exit status
+make: *** [subdir.mk:20: A15_Audio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+16:03:17 Build Failed. 4 errors, 1 warnings. (took 665ms)
+

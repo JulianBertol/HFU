@@ -1,0 +1,83 @@
+14:41:18 **** Incremental Build of configuration Debug_with_Linux GCC for project A13_ForkWithSignals ****
+make all 
+Building file: ../A13_ForkWithSignals.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A13_ForkWithSignals.d" -MT"A13_ForkWithSignals.o" -o "A13_ForkWithSignals.o" "../A13_ForkWithSignals.c"
+../A13_ForkWithSignals.c: In function ‘main’:
+../A13_ForkWithSignals.c:97:24: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |    if (signal(SIGUSR1, sig_handler) == SIG_ERR)
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:99:23: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+   99 |    if (signal(SIGINT, sig_handler) == SIG_ERR)
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:101:24: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+  101 |    if (signal(SIGKILL, sig_handler) == SIG_ERR)
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:103:24: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |    if (signal(SIGSTOP, sig_handler) == SIG_ERR)
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:105:24: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+  105 |    if (signal(SIGUSR2, sig_handler) == SIG_ERR)
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:107:23: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+  107 |    if (signal(SIGHUP, sig_handler) == SIG_ERR)
+      |                       ^~~~~~~~~~~
+      |                       |
+      |                       void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+Finished building: ../A13_ForkWithSignals.c
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+../A13_ForkWithSignals.c:109:24: warning: passing argument 2 of ‘signal’ from incompatible pointer type [-Wincompatible-pointer-types]
+  109 |    if (signal(SIGCONT, sig_handler) == SIG_ERR)
+      |                        ^~~~~~~~~~~
+      |                        |
+      |                        void (*)(int,  siginfo_t *) {aka void (*)(int,  struct <anonymous> *)}
+In file included from ../A13_ForkWithSignals.c:15:
+/usr/include/signal.h:88:57: note: expected ‘__sighandler_t’ {aka ‘void (*)(int)’} but argument is of type ‘void (*)(int,  siginfo_t *)’ {aka ‘void (*)(int,  struct <anonymous> *)’}
+   88 | extern __sighandler_t signal (int __sig, __sighandler_t __handler)
+      |                                          ~~~~~~~~~~~~~~~^~~~~~~~~
+ 
+../A13_ForkWithSignals.c: In function ‘doParent’:
+../A13_ForkWithSignals.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+   88 | }
+      | ^
+Building target: A13_ForkWithSignals
+Invoking: GCC C Linker
+gcc  -o "A13_ForkWithSignals"  ./A13_ForkWithSignals.o   
+Finished building target: A13_ForkWithSignals
+ 
+
+14:41:18 Build Finished. 0 errors, 8 warnings. (took 524ms)
+

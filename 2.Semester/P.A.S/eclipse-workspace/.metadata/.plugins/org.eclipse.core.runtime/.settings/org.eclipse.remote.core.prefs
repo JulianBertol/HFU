@@ -1,0 +1,15 @@
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_ADDRESS_ATTR=141.28.56.189
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_IS_PASSWORD_ATTR=true
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_LOGIN_SHELL_COMMAND_ATTR=/bin/bash -l -c '{0}'
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_PORT_ATTR=22
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_TIMEOUT_ATTR=0
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_USERNAME_ATTR=pi
+connections/org.eclipse.remote.JSch/141.28.56.189/JSCH_USE_LOGIN_SHELL_ATTR=true
+connections/org.eclipse.remote.JSch/target085.local/JSCH_ADDRESS_ATTR=target085.local
+connections/org.eclipse.remote.JSch/target085.local/JSCH_IS_PASSWORD_ATTR=true
+connections/org.eclipse.remote.JSch/target085.local/JSCH_LOGIN_SHELL_COMMAND_ATTR=/bin/bash -l -c '{0}'
+connections/org.eclipse.remote.JSch/target085.local/JSCH_PORT_ATTR=22
+connections/org.eclipse.remote.JSch/target085.local/JSCH_TIMEOUT_ATTR=0
+connections/org.eclipse.remote.JSch/target085.local/JSCH_USERNAME_ATTR=pi
+connections/org.eclipse.remote.JSch/target085.local/JSCH_USE_LOGIN_SHELL_ATTR=true
+eclipse.preferences.version=1

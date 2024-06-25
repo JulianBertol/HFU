@@ -1,0 +1,6 @@
+15:55:11 **** Incremental Build of configuration Debug_with_Linux GCC for project A16_Farbbalken01 ****
+make all 
+make: Nothing to be done for 'all'.
+
+15:55:11 Build Finished. 0 errors, 0 warnings. (took 268ms)
+

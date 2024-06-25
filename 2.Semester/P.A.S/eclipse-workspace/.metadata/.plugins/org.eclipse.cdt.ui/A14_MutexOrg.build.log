@@ -1,0 +1,15 @@
+16:36:53 **** Incremental Build of configuration Debug_with_Cross GCC for project A14_MutexOrg ****
+make all 
+Building file: ../A14_MutexOrg.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A14_MutexOrg.d" -MT"A14_MutexOrg.o" -o "A14_MutexOrg.o" "../A14_MutexOrg.c"
+Finished building: ../A14_MutexOrg.c
+ 
+Building target: A14_MutexOrg
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "A14_MutexOrg"  ./A14_MutexOrg.o   -lpthread
+Finished building target: A14_MutexOrg
+ 
+
+16:36:54 Build Finished. 0 errors, 0 warnings. (took 485ms)
+

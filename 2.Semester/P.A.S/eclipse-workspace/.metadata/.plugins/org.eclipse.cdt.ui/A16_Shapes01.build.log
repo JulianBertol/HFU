@@ -1,0 +1,15 @@
+12:40:14 **** Incremental Build of configuration Debug_with_Linux GCC for project A16_Shapes01 ****
+make all 
+Building file: ../A16_Shapes01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"A16_Shapes01.d" -MT"A16_Shapes01.o" -o "A16_Shapes01.o" "../A16_Shapes01.c"
+Finished building: ../A16_Shapes01.c
+ 
+Building target: A16_Shapes01
+Invoking: GCC C Linker
+gcc  -o "A16_Shapes01"  ./A16_Shapes01.o   
+Finished building target: A16_Shapes01
+ 
+
+12:40:15 Build Finished. 0 errors, 0 warnings. (took 381ms)
+

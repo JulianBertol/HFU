@@ -1,0 +1,9 @@
+15:49:50 **** Incremental Build of configuration Debug_with_Linux GCC for project A16_Farbbalken01 ****
+make all 
+make: Nothing to be done for 'all'.
+15:54:28 **** Incremental Build of configuration Debug_with_Cross GCC for project A16_Farbbalken01 ****
+make all 
+make: Nothing to be done for 'all'.
+15:55:11 **** Incremental Build of configuration Debug_with_Linux GCC for project A16_Farbbalken01 ****
+make all 
+make: Nothing to be done for 'all'.
