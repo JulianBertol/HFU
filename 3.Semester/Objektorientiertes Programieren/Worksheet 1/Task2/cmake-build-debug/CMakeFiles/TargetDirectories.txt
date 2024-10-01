@@ -1,0 +1,3 @@
+C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Objektorientiertes Programieren/Worksheet 1/Task2/cmake-build-debug/CMakeFiles/Task2.dir
+C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Objektorientiertes Programieren/Worksheet 1/Task2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Objektorientiertes Programieren/Worksheet 1/Task2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
