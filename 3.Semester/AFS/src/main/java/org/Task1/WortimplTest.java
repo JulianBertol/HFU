@@ -1,7 +1,8 @@
 package org.Task1;
 
 
-import org.testng.annotations.Test;
+
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
