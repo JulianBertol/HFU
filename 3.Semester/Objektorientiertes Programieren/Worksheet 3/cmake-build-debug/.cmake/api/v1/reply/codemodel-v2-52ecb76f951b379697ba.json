@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Worksheet_3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Worksheet_3_Task1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Worksheet_3_Task1-Debug-9b80ea6974d3f87ec02a.json",
+					"name" : "Worksheet_3_Task1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Worksheet_3_Task2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Worksheet_3_Task2-Debug-5071cd6b2a67a7605242.json",
+					"name" : "Worksheet_3_Task2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Worksheet_3_Task3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Worksheet_3_Task3-Debug-a0d41c126c9941ff7c97.json",
+					"name" : "Worksheet_3_Task3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Worksheet_3_Task4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Worksheet_3_Task4-Debug-738661ab327a1f69e612.json",
+					"name" : "Worksheet_3_Task4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Objektorientiertes Programieren/Worksheet 3/cmake-build-debug",
+		"source" : "C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Objektorientiertes Programieren/Worksheet 3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
