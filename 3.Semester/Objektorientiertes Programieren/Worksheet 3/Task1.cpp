@@ -2,7 +2,7 @@
 #include <cassert>
 
 namespace tst{
-    void sort (int* numbers, int size) {
+    void sort (int* numbers, const int size) {
         for (int i = 0; i < size; i++) {
             int key = numbers[i];
             int j = i - 1;
@@ -14,7 +14,7 @@ namespace tst{
         }
     }
 
-    void test_sort(int* numbers, int size) {
+    void test_sort(int* numbers, const int size) {
         sort (numbers, size);
         for (int i = 1; i < size; i++) {
             assert(numbers[i - 1] <= numbers[i]);

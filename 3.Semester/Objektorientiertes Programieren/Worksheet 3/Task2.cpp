@@ -9,11 +9,8 @@ namespace hfu {
         int y = 0;
 
     public:
-        Position(const std::string& name, int x, int y) {
-            this->name = name;
-            this->x = x;
-            this->y = y;
-        }
+        Position(const std::string& name, const int x, const int y):name(name), x(x), y(y) {}
+
         const std::string& getName() const {
             return this->name;
         };

@@ -7,8 +7,8 @@ namespace hfu {
     class Position {
     private:
         std::string name;
-        int x = 0;
-        int y = 0;
+        int x;
+        int y;
 
     public:
         Position(const std::string& name, int x, int y);

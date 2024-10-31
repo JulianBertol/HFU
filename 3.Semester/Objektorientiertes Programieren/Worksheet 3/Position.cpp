@@ -1,11 +1,7 @@
 #include "Position.h"
 
 namespace hfu {
-
-        Position::Position(const std::string &name, int x, int y) {
-            this->name = name;
-            this->x = x;
-            this->y = y;
+        Position::Position(const std::string &name, const int x, const int y):name(name), x(x), y(y) {
         }
 
         const std::string &Position::getName() {

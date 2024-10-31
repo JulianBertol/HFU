@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cassert>
 
-void sort(hfu::Position* positions, int size) {
+void sort(hfu::Position* positions, const int size) {
     for (int i = 1; i < size; ++i) {
         hfu::Position key = positions[i];
         int j = i - 1;
@@ -16,30 +16,26 @@ void sort(hfu::Position* positions, int size) {
     }
 }
 
+void test_sort(hfu::Position* positions, const int size) {
+    sort (positions, size);
+    for (int i = 1; i < size; i++) {
+        assert(positions[i - 1].compare(positions[i]) == -1);
+    }
+}
+
+void fill_test_sort() {
+    hfu::Position positions[5] = {
+        hfu::Position("Mordor", 1, 2),
+        hfu::Position("Zordor", 7, 8),
+        hfu::Position("Ardor", 10, 12),
+        hfu::Position("Bordor", 0, 5),
+        hfu::Position("Julian", 3, 4)
+    };
+    test_sort(positions, 5);
+}
+
 int main() {
     std::cout << "Starting Programm ..." << std::endl;
-
-    hfu::Position positions[] = {
-        hfu::Position("Mordor", 47, 11),
-        hfu::Position("Zordor", 48, 12),
-        hfu::Position("Ardor", 46, 10),
-        hfu::Position("Bordor", 47, 15)
-    };
-
-    int size = std::size(positions); //falls nicht erlaubt mit sizeof auch möglich
-                                     //sizeof(postion) / sizeof(position[0]) -> rechnet mit den bytes
-
-    // Sortiere das Array von Positionen
-    sort(positions, size);
-
-    assert(positions[0].getName() == "Ardor");
-    assert(positions[1].getName() == "Bordor");
-    assert(positions[2].getName() == "Mordor");
-    assert(positions[3].getName() == "Zordor");
-
-    for (int i = 0; i < size; ++i) {
-        std::cout << positions[i].getName() << std::endl;
-    }
-
+    fill_test_sort();
     std::cout << "End of Programm ..." << std::endl;
 }
