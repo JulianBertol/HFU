@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e8b8bc8-1a25-4ca3-b452-733cb6baa28c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Task3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Objektorientiertes Programieren/Worksheet 4/City.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Objektorientiertes Programieren/Worksheet 4/City.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Objektorientiertes Programieren/Worksheet 4/City.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Objektorientiertes Programieren/Worksheet 4/City.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2oCpxxJGtWVLdtDJB0SJKWR5pgs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Julian/OneDrive/Documents/HFU/git/3.Semester/Computernetze 2/Task3&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e8b8bc8-1a25-4ca3-b452-733cb6baa28c" name="Changes" comment="" />
+      <created>1730383661582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730383661582</updated>
+    </task>
+    <servers />
+  </component>
+</project>
