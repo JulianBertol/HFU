@@ -134,8 +134,8 @@ public class VignereChiffreStatic {
 
             }
             //System.out.println(combination.toString());
-            if (isProbablyReadable(decrypt("HOE BHEKHH KXQD JOCDF.", combination.toString()))) {
-                System.out.println(decrypt("HOE BHEKHH KXQD JOCDF.", combination.toString()));
+            if (isProbablyReadable(decrypt("FKGU KUV GKP VGUV", combination.toString()))) {
+                System.out.println(decrypt("FKGU KUV GKP VGUV", combination.toString()));
             }
         }
     }
