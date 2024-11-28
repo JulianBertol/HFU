@@ -1,0 +1,7 @@
+LibraryItem[] libraryItems = new LibraryItem[size];
+		for (int i = 0; i < size; i++) {
+			Medium medium = new Medium("Herr der Ringe " + i);
+			String id = Integer.toString(i);
+			LibraryItem libraryItem = new LibraryItem(medium, id);
+			libraryItems[i] = libraryItem;
+		}
