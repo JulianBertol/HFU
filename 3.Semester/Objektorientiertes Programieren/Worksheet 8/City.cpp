@@ -1,11 +1,11 @@
 #include "City.h"
 
-#include <iostream>
-#include <ostream>
-#include <stdexcept>
 
 hfu::City::City(const Position& position, const std::string* pois, const int number_of_poi)
     : position(position), pois(initializepois(pois, number_of_poi)), number_of_poi(number_of_poi), length(number_of_poi) {
+    if (pois == nullptr && number_of_poi != 0) {
+        throw std::invalid_argument("City does not have pois");
+    }
 }
 
 hfu::City::City(const std::string& name, int x, int y, const std::string* pois, int length)
@@ -38,6 +38,51 @@ std::string* hfu::City::initializepois(const std::string* pois, const int length
     return poi;
 }
 
+
+bool hfu::City::checkbounds(int index) const {
+    if (index >= 0 && index < number_of_poi) {
+        return true;
+    }
+    throw std::out_of_range("Index out of range");
+}
+
+
+hfu::City hfu::City::createCity() {
+    std::string mordor = "Mordor";
+    std::string pois[]={"Sauron", "Minas Morgul", "Orodruin"};
+    hfu::City result(mordor, 47, 11, pois, 3);
+    return result;
+}
+
+
+
+
+//setter
+void hfu::City::setPOI(const int i, const std::string& poi) const {
+    if (checkbounds(i)) {
+        this->pois[i] = poi;
+    }
+}
+
+
+
+
+//getter
+int hfu::City::getNumberOfPOI() const {
+    return this->number_of_poi;
+}
+
+hfu::Position hfu::City::getPosition() const {
+    return this->position;
+}
+
+std::string hfu::City::getPOI(const int index) const {
+    if (checkbounds(index)) {
+        return pois[index];
+    }
+    return "";
+}
+
 std::string hfu::City::getName() const {
     return this->position.getName();
 }
@@ -50,30 +95,9 @@ int hfu::City::getY() const {
     return this->position.getY();
 }
 
-bool hfu::City::checkbounds(int index) const {
-    if (index >= 0 && index < number_of_poi) {
-        return true;
-    }
-    throw std::out_of_range("Index out of range");
-}
 
-std::string hfu::City::getPOI(const int index) const {
-    if (checkbounds(index)) {
-        return pois[index];
-    }
-    return "";
-}
 
-void hfu::City::setPOI(const int i, const std::string& poi) const {
-    if (checkbounds(i)) {
-        this->pois[i] = poi;
-    }
-}
-
-int hfu::City::getNumberOfPOI() const {
-    return this->number_of_poi;
-}
-
+//add methode
 void hfu::City::add(const std::string& name) {
     if (this->number_of_poi == this->length) {
         resize_array(number_of_poi);
@@ -113,3 +137,52 @@ bool hfu::City::remove(const std::string& poi) {
     resize_array(number_of_poi);
     return removed;
 }
+
+
+//operatoren
+std::ostream& hfu::operator<<(std::ostream& os, const hfu::City& city) {
+    os << city.getPosition() << std::endl << city.getNumberOfPOI()  << std::endl;
+    for (int i = 0; i < city.getNumberOfPOI(); i++) {
+        os << city.pois[i] << std::endl;
+    }
+    return os;
+}
+
+//lesen
+const std::string& hfu::City::operator[](int index) const {
+    if (index < 0 || index >= this->getNumberOfPOI()) {
+        throw std::out_of_range("Index out of range");
+    }
+    return pois[index];
+}
+
+//schreiben
+std::string& hfu::City::operator[](int index) {
+    if (index < 0 || index >= this->getNumberOfPOI()) {
+        throw std::out_of_range("Index out of range");
+    }
+    return pois[index];
+}
+
+hfu::City& hfu::City::operator=(const std::string &poi) {
+    delete[] this->pois;
+    this->pois = initializepois(&poi, this->length);
+    return *this;
+}
+
+
+hfu::City& hfu::City::operator=(const hfu::City& other) {
+    if (this == &other) {
+        return *this;
+    }
+
+    this->position = other.position;
+    this->number_of_poi = other.number_of_poi;
+    this->length = other.length;
+
+    delete[] this->pois;
+    this->pois = initializepois(other.pois, other.number_of_poi);
+
+    return *this;
+}
+
