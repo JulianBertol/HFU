@@ -46,17 +46,6 @@ bool hfu::City::checkbounds(int index) const {
     throw std::out_of_range("Index out of range");
 }
 
-
-hfu::City hfu::City::createCity() {
-    std::string mordor = "Mordor";
-    std::string pois[]={"Sauron", "Minas Morgul", "Orodruin"};
-    hfu::City result(mordor, 47, 11, pois, 3);
-    return result;
-}
-
-
-
-
 //setter
 void hfu::City::setPOI(const int i, const std::string& poi) const {
     if (checkbounds(i)) {
@@ -149,25 +138,15 @@ std::ostream& hfu::operator<<(std::ostream& os, const hfu::City& city) {
 }
 
 //lesen
-const std::string& hfu::City::operator[](int index) const {
-    if (index < 0 || index >= this->getNumberOfPOI()) {
-        throw std::out_of_range("Index out of range");
-    }
-    return pois[index];
+const std::string& hfu::City::operator[](const int index) const {
+    if (checkbounds(index))
+        return pois[index];
 }
 
 //schreiben
-std::string& hfu::City::operator[](int index) {
-    if (index < 0 || index >= this->getNumberOfPOI()) {
-        throw std::out_of_range("Index out of range");
-    }
-    return pois[index];
-}
-
-hfu::City& hfu::City::operator=(const std::string &poi) {
-    delete[] this->pois;
-    this->pois = initializepois(&poi, this->length);
-    return *this;
+std::string& hfu::City::operator[](const int index) {
+    if(checkbounds(index))
+        return pois[index];
 }
 
 
@@ -185,4 +164,3 @@ hfu::City& hfu::City::operator=(const hfu::City& other) {
 
     return *this;
 }
-

@@ -38,7 +38,6 @@ namespace hfu {
         hfu::City &operator=(const std::string &poi);
 
         City &operator=(const hfu::City& other);
-        static City createCity();
     };
 }
 
