@@ -3,6 +3,11 @@
 #include "Position.h"
 #include <cassert>
 #include "sort.h"
+#include "BattleSimulation.h"
+#include "Character.h"
+#include "Elf.h"
+#include "Dwarf.h"
+#include "Orc.h"
 
 
 hfu::Position createPosition(){
@@ -202,6 +207,16 @@ void test_sort_vector() {
     assert(positions.at(2) == *pos2);
 }
 
+void simulation() {
+    std::vector<std::unique_ptr<hfu::Character>> characters;
+
+    characters.push_back(std::make_unique<Dwarf>("Dwarf", 8, 15));
+    characters.push_back(std::make_unique<Elf>("Elf", 8, 5));
+    characters.push_back(std::make_unique<Orc>("Orc", 12, 20));
+
+    std::cout << "Start der Schlacht!\n";
+    BattleSimulation(characters);
+}
 int main() {
     std::cout << "starting ..." << std::endl;
     //testCity();
@@ -214,6 +229,7 @@ int main() {
     test_task8_1();
     test_task8_2();
     test_sort_vector();
+    simulation();
     std::cout << "done." << std::endl;
     return 0;
 }
