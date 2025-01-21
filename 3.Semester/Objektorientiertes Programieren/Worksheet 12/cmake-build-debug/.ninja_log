@@ -1,0 +1,12 @@
+# ninja log v6
+2	602	1736895977704171445	CMakeFiles/Worksheet_12.dir/Vehicle.cpp.o	5d03e79349cc8f2d
+5	418	1736896291464258221	CMakeFiles/Worksheet_12.dir/PassengerCar.cpp.o	8f3e1d0c1b11b9f8
+2	383	1736896353709172259	CMakeFiles/Worksheet_12.dir/PassengerCar.cpp.o	8f3e1d0c1b11b9f8
+2	386	1736896353709073633	CMakeFiles/Worksheet_12.dir/StationWagon.cpp.o	75140da410c98e4a
+3	391	1736896376811226999	CMakeFiles/Worksheet_12.dir/StationWagon.cpp.o	75140da410c98e4a
+4	418	1736896475795137596	CMakeFiles/Worksheet_12.dir/Van.cpp.o	423f87711af0d60c
+4	419	1736896475795013137	CMakeFiles/Worksheet_12.dir/StationWagon.cpp.o	75140da410c98e4a
+4	396	1736896518861493137	CMakeFiles/Worksheet_12.dir/PassengerCar.cpp.o	8f3e1d0c1b11b9f8
+4	398	1736896518861335387	CMakeFiles/Worksheet_12.dir/StationWagon.cpp.o	75140da410c98e4a
+4	339	1736896539012468050	CMakeFiles/Worksheet_12.dir/main.cpp.o	fab0463aecc75f8c
+339	427	1736896539347522407	Worksheet_12	5d337f580e9830b5

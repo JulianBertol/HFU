@@ -9,6 +9,8 @@ int Dwarf::getAxeweight() const {
 void Dwarf::applyWeapon(hfu::Character& character) {
     if (character.isAlive()) {
         std::cout << this->getName() << " schlägt mit der Axt " << character.getName() << "!\n";
-        character.hit(3); // Axtschlag reduziert Lebenspunkte um 3
+        for (int i = 0; i < 3; ++i) {
+            character.hit(1); // Axtschlag reduziert Lebenspunkte um 3
+        }
     }
 }

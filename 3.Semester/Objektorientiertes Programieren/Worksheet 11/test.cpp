@@ -195,16 +195,20 @@ void test_sort_vector() {
     hfu::Position *pos1 = new hfu::Position("Mordor", 47, 11);
     hfu::Position *pos2 = new hfu::Position("Zordor", 10, 12);
     hfu::Position *pos3 = new hfu::Position("Ardor", 3, 5);
+    hfu::Position *pos4 = new hfu::Position("Ardor", 3, 5);
     std::vector<hfu::Position> positions;
     positions.push_back(*pos1);
     positions.push_back(*pos2);
     positions.push_back(*pos3);
+    positions.push_back(*pos4);
 
     sort_vec(positions);
 
+
     assert(positions.at(0) == *pos3);
-    assert(positions.at(1) == *pos1);
-    assert(positions.at(2) == *pos2);
+    assert(positions.at(1) == *pos4);
+    assert(positions.at(2) == *pos1);
+    assert(positions.at(3) == *pos2);
 }
 
 void simulation() {

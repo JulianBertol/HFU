@@ -10,7 +10,7 @@ void BattleSimulation(std::vector<std::unique_ptr<hfu::Character>>& characters) 
         int attackerIndex = std::rand() % characters.size();
         int defenderIndex = std::rand() % characters.size();
 
-        // Angreifer und Verteidiger dürfen nicht identisch sein
+
         if (attackerIndex != defenderIndex &&
             characters[attackerIndex]->isAlive() &&
             characters[defenderIndex]->isAlive()) {
