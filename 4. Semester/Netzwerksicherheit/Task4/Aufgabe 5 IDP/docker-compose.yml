@@ -1,0 +1,145 @@
+# make sure ip forwarding is enabled on the host with:
+# echo 1 > /proc/sys/net/ipv4/ip_forward
+version: "3.3"
+services:
+
+  idp:
+    image: quay.io/keycloak/keycloak
+    command: start-dev
+    container_name: idp
+    hostname: idp
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - "8081:8080"
+
+  sp:
+    image: nextcloud
+    hostname: sp
+    container_name: sp
+    ports:
+      - "8080:80"
+
+
+#  nextcloud-aio-mastercontainer:
+#    image: nextcloud/all-in-one:latest
+#    container_name: nextcloud-aio-mastercontainer
+#    hostname: sp
+#    ports:
+#      - "8081:8080"
+#      - "8443:8443"
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#        #      - type: bind
+#        #        source: /var/run/docker.sock
+#        #        target: /var/run/docker.sock
+#      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config
+    
+
+
+#  attacker:
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile-attacker
+#    hostname: attacker
+#    container_name: attacker
+#    cap_add:
+#      - NET_ADMIN
+#    networks:
+#      internet:
+#      net1:
+#        ipv4_address: 90.0.0.66
+#      net2:
+#        ipv4_address: 192.168.42.66  
+
+#  webserver:
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile-webserver
+#    hostname: webserver
+#    container_name: webserver
+#    cap_add:
+#      - NET_ADMIN
+#    networks:
+#      internet:
+#      net1:
+#        ipv4_address: 90.0.0.10
+#    ports:
+#      - "80:80"
+#    sysctls:
+#      - net.ipv4.conf.all.accept_redirects=1    
+
+#  middle-router:
+#    build: ./
+#    hostname: middle-router
+#    container_name: middle-router
+#    cap_add:
+#      - NET_ADMIN
+#    networks:
+#      net1:
+#        ipv4_address: 90.0.0.20
+#      net2:
+#        ipv4_address: 192.168.42.10
+#    sysctls:
+#      - net.ipv4.conf.all.accept_redirects=1
+
+
+#  browser:
+#    build:
+#      context: ./
+#      dockerfile: Dockerfile-firefox
+#    container_name: browser
+#    hostname: browser
+#    cap_add:
+#      - NET_ADMIN
+#    networks:
+#      lokal:
+#        ipv4_address: 10.0.0.10
+#      net2:
+#        ipv4_address: 192.168.42.20
+#    volumes:
+#      - firefox_data:/config
+#    sysctls:
+#      - net.ipv4.conf.all.accept_redirects=1
+
+
+
+
+#external: true -> use extarnal network definition drom docker network
+#default: Connect default-network to the 'none' network of docker
+#also see: https://docs.docker.com/network/network-tutorial-macvlan/
+#networks:
+#  internet:
+#  net1:
+#    internal: true
+#    driver: macvlan
+#    driver_opts:
+#      com.docker.network.bridge.name: docker-net1
+#    ipam:
+#      config:
+#        - subnet: 90.0.0.0/16
+#  net2:
+#    internal: true
+#    driver: macvlan
+#    driver_opts:
+#      com.docker.network.bridge.name: docker-net2
+#    ipam:
+#      config:
+#        - subnet: 192.168.42.0/24
+
+#  lokal:
+#    driver: bridge
+#    internal: true
+#    driver_opts:
+#      com.docker.network.bridge.name: docker-browser
+#    ipam:
+#      config:
+#        - subnet: 10.0.0.0/16
+
+
+#volumes:
+#  firefox_data:
+#volumes: 
+#  nextcloud_aio_mastercontainer:
+#          #    name: nextcloud_aio_mastercontainer
