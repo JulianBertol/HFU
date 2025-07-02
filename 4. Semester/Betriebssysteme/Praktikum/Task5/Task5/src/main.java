@@ -22,11 +22,11 @@ public class main {
 
             // Beide Threads starten
             threadA.start();
-            //threadB.start();
+            threadB.start();
 
             // Auf beide Threads warten
             threadA.join();
-            //threadB.join();
+            threadB.join();
 
             System.out.println("Programm beendet");
 

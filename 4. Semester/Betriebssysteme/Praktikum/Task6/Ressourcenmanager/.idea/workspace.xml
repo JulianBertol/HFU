@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f639f1b-0a5b-438f-9c6e-9be8bf1a35fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe 0/Aufgabe0.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe 0/HowToRun.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe 1/Aufgabe 1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe 1/largefiles.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe2/Binary.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe2/Binary.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe3/Aufgabe.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe3/Aufgabe.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe3/CMakelist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe3/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/aufgabe.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/aufgabe.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/matplotlib/funktion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/matplotlib/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/skript.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/website/Screenshot from 2023-11-16 17-38-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/website/Screenshot from 2023-11-16 17-38-37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe4/website/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/aufgabe5.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/aufgabe5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/aufgabe5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/aufgabe5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/aufgabe5.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/.ipynb_checkpoints/main-checkpoint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/Handschrifterkennung.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/t10k-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/t10k-labels-idx1-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/aufgabe6.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/aufgabe6.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/aufgabe6.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/aufgabe6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/aufgabe6.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/t10k-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/t10k-labels-idx1-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/data/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/nn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/optim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/torch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../1. Semester/Einführung in die Informatik/Aufgabe6/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/Task 4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/cache-v2-1476da059b04666c2008.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3b827159e05e6f968f1a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b593c0c6a47a5a837933.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/index-2025-05-20T13-19-06-0558.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/target-Task_4-Debug-2e973395cc47666e4af2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-d620e758811353ca5ad3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.ninja_deps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/.ninja_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/3.30.5/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/Task_4.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/Task_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/build.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task 4/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task5/Task5/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/Task5/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation.pages" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentation.pages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Projektmanagement/Task4/07-04-PM.key" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Projektmanagement/Task4/07-04-PM.key" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2zBVbzYrmDNS9qgcEHdxwrprNk1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Julian/iCloudDrive/Documents/HFU-Git/HFU/4. Semester/Betriebssysteme/Praktikum/Task9/Ressourcenmanager",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f639f1b-0a5b-438f-9c6e-9be8bf1a35fa" name="Changes" comment="" />
+      <created>1751204529792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751204529792</updated>
+      <workItem from="1751204530916" duration="69000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
