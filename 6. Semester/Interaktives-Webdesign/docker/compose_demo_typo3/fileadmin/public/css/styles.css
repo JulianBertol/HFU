@@ -1,0 +1,86 @@
+body {
+padding:0;
+
+font-family: sans-serif;
+font-size: 12px;
+line-height: 1.8;
+
+overflow-x: hidden;
+overflow-y:scroll;  
+}
+
+
+.img-responsive{max-width: none; width: 100%; }
+.navbar-fixed-bottom, .navbar-fixed-top {position: relative;}
+.navbar {margin-bottom:0px;}
+
+ 
+.navbar-brand{padding-left:0px; font-size: 16px;}
+
+
+
+
+.home {
+
+  #background: url(../bilder/media.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align:center;
+  background-color: #3085C8;
+  color: black;
+ }
+
+.masthead.clearfix {
+    padding-top: 10%;
+    text-align: center;
+}
+
+
+.head{
+   
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #3085c8;  
+    text-align: center;
+}
+ 
+
+
+.subNavi ul{margin: 0 0 0 0; padding: 0 0 0 0;}
+.subNavi ul li{list-style: none;}
+.subNavi ul li {font-size:14px; color:orange;}
+.subNavi ul li a:hover{font-size:14px; text-decoration-style: solid; color:black;}
+.subNavi ul li a{font-size:14px; color:black;}
+.subNavi ul li a:active{font-size:14px; color:black;}
+
+
+.news{font-size:22px; color:#FF8700;}
+
+
+ 
+
+.breadcrumb a{text-decoration: none; color:#1a78c2;}
+.breadcrumb{font-size: 11px; background-color: white;}  
+
+    
+
+
+
+.cover h1{
+    color:  black;  font-size: 30px;
+}
+
+.cover h2{
+    color:  black;  font-size: 25px;
+}
+
+.footer{clear:both; text-align: center; font-size: 90%; color: #1a78c2; }
+
+.active {font-size:  14px;}
+.active-2 {font-weight:bold;font-size:  14px;}
+
